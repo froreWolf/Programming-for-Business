@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\bin\Debug\Jenko Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\bin\Debug\Jenko Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\bin\Debug\Jenko Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\bin\Debug\Jenko Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\obj\Debug\Jenko Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\obj\Debug\Jenko_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\obj\Debug\Jenko_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\obj\Debug\Jenko Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\obj\Debug\Jenko Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\obj\Debug\Jenko Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\obj\Debug\Jenko Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Jenko Solution\Jenko Project\obj\Debug\Jenko Project.pdb

@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\bin\Debug\Grade Calculator Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\bin\Debug\Grade Calculator Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\bin\Debug\Grade Calculator Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\bin\Debug\Grade Calculator Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\obj\Debug\Grade Calculator Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\obj\Debug\Grade_Calculator_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\obj\Debug\Grade_Calculator_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\obj\Debug\Grade Calculator Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\obj\Debug\Grade Calculator Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\obj\Debug\Grade Calculator Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\obj\Debug\Grade Calculator Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Grade Calculator Solution\Grade Calculator Project\obj\Debug\Grade Calculator Project.pdb

@@ -1,0 +1,24 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\bin\Debug\Product Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\bin\Debug\Product Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\bin\Debug\Product Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\bin\Debug\Product Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\obj\Debug\Product Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\obj\Debug\Product_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\obj\Debug\Product_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\obj\Debug\Product Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\obj\Debug\Product Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\obj\Debug\Product Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\obj\Debug\Product Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Product Solution\Product Project\obj\Debug\Product Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\bin\Debug\Product Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\bin\Debug\Product Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\bin\Debug\Product Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\bin\Debug\Product Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\obj\Debug\Product Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\obj\Debug\Product_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\obj\Debug\Product_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\obj\Debug\Product Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\obj\Debug\Product Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\obj\Debug\Product Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\obj\Debug\Product Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Modified Product Solution\Product Project\obj\Debug\Product Project.pdb

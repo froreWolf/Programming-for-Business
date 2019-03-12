@@ -1,0 +1,12 @@
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\bin\Debug\Area Calculator Project.exe.config
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\bin\Debug\Area Calculator Project.exe
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\bin\Debug\Area Calculator Project.pdb
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\bin\Debug\Area Calculator Project.xml
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\obj\Debug\Area Calculator Project.vbprojAssemblyReference.cache
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\obj\Debug\Area_Calculator_Project.frmMain.resources
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\obj\Debug\Area_Calculator_Project.Resources.resources
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\obj\Debug\Area Calculator Project.vbproj.GenerateResource.cache
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\obj\Debug\Area Calculator Project.vbproj.CoreCompileInputs.cache
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\obj\Debug\Area Calculator Project.exe
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\obj\Debug\Area Calculator Project.xml
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap03\Area Calculator Solution\Area Calculator Project\obj\Debug\Area Calculator Project.pdb

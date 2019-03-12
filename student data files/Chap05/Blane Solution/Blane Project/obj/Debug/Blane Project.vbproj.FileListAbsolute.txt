@@ -1,0 +1,12 @@
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\bin\Debug\Blane Project.exe.config
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\bin\Debug\Blane Project.exe
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\bin\Debug\Blane Project.pdb
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\bin\Debug\Blane Project.xml
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\obj\Debug\Blane Project.vbprojAssemblyReference.cache
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\obj\Debug\Blane_Project.frmMain.resources
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\obj\Debug\Blane_Project.Resources.resources
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\obj\Debug\Blane Project.vbproj.GenerateResource.cache
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\obj\Debug\Blane Project.vbproj.CoreCompileInputs.cache
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\obj\Debug\Blane Project.exe
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\obj\Debug\Blane Project.xml
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap05\Blane Solution\Blane Project\obj\Debug\Blane Project.pdb

@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\bin\Debug\CH7YouDoIt1Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\bin\Debug\CH7YouDoIt1Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\bin\Debug\CH7YouDoIt1Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\bin\Debug\CH7YouDoIt1Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\obj\Debug\CH7YouDoIt1Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\obj\Debug\CH7YouDoIt1Project.Form1.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\obj\Debug\CH7YouDoIt1Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\obj\Debug\CH7YouDoIt1Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\obj\Debug\CH7YouDoIt1Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\obj\Debug\CH7YouDoIt1Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\obj\Debug\CH7YouDoIt1Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH7YouDoIt1Solution\CH7YouDoIt1Project\obj\Debug\CH7YouDoIt1Project.pdb

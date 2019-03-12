@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\bin\Debug\Gross Pay Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\bin\Debug\Gross Pay Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\bin\Debug\Gross Pay Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\bin\Debug\Gross Pay Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\obj\Debug\Gross Pay Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\obj\Debug\Gross_Pay_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\obj\Debug\Gross_Pay_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\obj\Debug\Gross Pay Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\obj\Debug\Gross Pay Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\obj\Debug\Gross Pay Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\obj\Debug\Gross Pay Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Gross Pay Solution\Gross Pay Project\obj\Debug\Gross Pay Project.pdb

@@ -1,0 +1,22 @@
+C:\Users\DLIFER\Downloads\Exam 1\Debug Solution 1\Debug Project\bin\Debug\Debug Project.exe.config
+C:\Users\DLIFER\Downloads\Exam 1\Debug Solution 1\Debug Project\bin\Debug\Debug Project.exe
+C:\Users\DLIFER\Downloads\Exam 1\Debug Solution 1\Debug Project\bin\Debug\Debug Project.pdb
+C:\Users\DLIFER\Downloads\Exam 1\Debug Solution 1\Debug Project\bin\Debug\Debug Project.xml
+C:\Users\DLIFER\Downloads\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug_Project.frmMain.resources
+C:\Users\DLIFER\Downloads\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug_Project.Resources.resources
+C:\Users\DLIFER\Downloads\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug Project.vbproj.GenerateResource.Cache
+C:\Users\DLIFER\Downloads\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug Project.exe
+C:\Users\DLIFER\Downloads\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug Project.xml
+C:\Users\DLIFER\Downloads\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug Project.pdb
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\bin\Debug\Debug Project.exe.config
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\bin\Debug\Debug Project.exe
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\bin\Debug\Debug Project.pdb
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\bin\Debug\Debug Project.xml
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug Project.vbprojAssemblyReference.cache
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug_Project.frmMain.resources
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug_Project.Resources.resources
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug Project.vbproj.GenerateResource.cache
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug Project.exe
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug Project.xml
+C:\Users\brand\Desktop\Exam 1\Debug Solution 1\Debug Project\obj\Debug\Debug Project.pdb

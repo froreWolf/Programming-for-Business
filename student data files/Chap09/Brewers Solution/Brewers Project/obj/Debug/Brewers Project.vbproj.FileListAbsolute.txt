@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\bin\Debug\Brewers Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\bin\Debug\Brewers Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\bin\Debug\Brewers Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\bin\Debug\Brewers Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\obj\Debug\Brewers Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\obj\Debug\Brewers_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\obj\Debug\Brewers_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\obj\Debug\Brewers Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\obj\Debug\Brewers Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\obj\Debug\Brewers Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\obj\Debug\Brewers Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Brewers Solution\Brewers Project\obj\Debug\Brewers Project.pdb

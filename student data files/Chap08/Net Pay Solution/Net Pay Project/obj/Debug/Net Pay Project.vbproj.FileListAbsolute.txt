@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\bin\Debug\Net Pay Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\bin\Debug\Net Pay Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\bin\Debug\Net Pay Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\bin\Debug\Net Pay Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\obj\Debug\Net Pay Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\obj\Debug\Net_Pay_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\obj\Debug\Net_Pay_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\obj\Debug\Net Pay Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\obj\Debug\Net Pay Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\obj\Debug\Net Pay Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\obj\Debug\Net Pay Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Net Pay Solution\Net Pay Project\obj\Debug\Net Pay Project.pdb

@@ -1,0 +1,24 @@
+C:\Users\brand\source\repos\CableDirect\CableDirect\bin\Debug\CableDirect.exe.config
+C:\Users\brand\source\repos\CableDirect\CableDirect\bin\Debug\CableDirect.exe
+C:\Users\brand\source\repos\CableDirect\CableDirect\bin\Debug\CableDirect.pdb
+C:\Users\brand\source\repos\CableDirect\CableDirect\bin\Debug\CableDirect.xml
+C:\Users\brand\source\repos\CableDirect\CableDirect\obj\Debug\CableDirect.vbprojAssemblyReference.cache
+C:\Users\brand\source\repos\CableDirect\CableDirect\obj\Debug\CableDirect.frmMain.resources
+C:\Users\brand\source\repos\CableDirect\CableDirect\obj\Debug\CableDirect.Resources.resources
+C:\Users\brand\source\repos\CableDirect\CableDirect\obj\Debug\CableDirect.vbproj.GenerateResource.cache
+C:\Users\brand\source\repos\CableDirect\CableDirect\obj\Debug\CableDirect.vbproj.CoreCompileInputs.cache
+C:\Users\brand\source\repos\CableDirect\CableDirect\obj\Debug\CableDirect.exe
+C:\Users\brand\source\repos\CableDirect\CableDirect\obj\Debug\CableDirect.xml
+C:\Users\brand\source\repos\CableDirect\CableDirect\obj\Debug\CableDirect.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\obj\Debug\CableDirect.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\obj\Debug\CableDirect.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\obj\Debug\CableDirect.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\obj\Debug\CableDirect.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\obj\Debug\CableDirect.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\obj\Debug\CableDirect.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\obj\Debug\CableDirect.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\obj\Debug\CableDirect.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\bin\Debug\CableDirect.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\bin\Debug\CableDirect.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\bin\Debug\CableDirect.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\InClass_Homework\CableDirect\CableDirect\bin\Debug\CableDirect.xml

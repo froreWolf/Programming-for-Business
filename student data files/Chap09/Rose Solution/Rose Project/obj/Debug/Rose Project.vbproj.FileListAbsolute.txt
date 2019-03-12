@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\bin\Debug\Rose Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\bin\Debug\Rose Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\bin\Debug\Rose Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\bin\Debug\Rose Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\obj\Debug\Rose Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\obj\Debug\Rose_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\obj\Debug\Rose_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\obj\Debug\Rose Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\obj\Debug\Rose Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\obj\Debug\Rose Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\obj\Debug\Rose Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Rose Solution\Rose Project\obj\Debug\Rose Project.pdb

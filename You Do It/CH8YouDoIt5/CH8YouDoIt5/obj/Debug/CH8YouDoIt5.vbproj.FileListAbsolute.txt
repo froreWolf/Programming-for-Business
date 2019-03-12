@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\bin\Debug\CH8YouDoIt5.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\bin\Debug\CH8YouDoIt5.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\bin\Debug\CH8YouDoIt5.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\bin\Debug\CH8YouDoIt5.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\obj\Debug\CH8YouDoIt5.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\obj\Debug\CH8YouDoIt5.Form1.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\obj\Debug\CH8YouDoIt5.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\obj\Debug\CH8YouDoIt5.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\obj\Debug\CH8YouDoIt5.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\obj\Debug\CH8YouDoIt5.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\obj\Debug\CH8YouDoIt5.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\You Do It\CH8YouDoIt5\CH8YouDoIt5\obj\Debug\CH8YouDoIt5.pdb

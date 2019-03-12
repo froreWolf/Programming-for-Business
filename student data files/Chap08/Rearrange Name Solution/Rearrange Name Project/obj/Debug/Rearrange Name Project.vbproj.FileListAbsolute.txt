@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\bin\Debug\Rearrange Name Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\bin\Debug\Rearrange Name Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\bin\Debug\Rearrange Name Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\bin\Debug\Rearrange Name Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\obj\Debug\Rearrange Name Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\obj\Debug\Rearrange_Name_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\obj\Debug\Rearrange_Name_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\obj\Debug\Rearrange Name Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\obj\Debug\Rearrange Name Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\obj\Debug\Rearrange Name Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\obj\Debug\Rearrange Name Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Rearrange Name Solution\Rearrange Name Project\obj\Debug\Rearrange Name Project.pdb

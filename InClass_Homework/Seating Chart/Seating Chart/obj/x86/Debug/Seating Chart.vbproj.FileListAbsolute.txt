@@ -1,0 +1,32 @@
+C:\Users\dlifer\Downloads\0133852830_VB2013-208704\Instructors\Completed Tutorials\Completed Tutorials\Chapter 08\Tutorial 8-6\Seating Chart\Seating Chart\bin\Debug\Seating Chart.exe
+C:\Users\dlifer\Downloads\0133852830_VB2013-208704\Instructors\Completed Tutorials\Completed Tutorials\Chapter 08\Tutorial 8-6\Seating Chart\Seating Chart\bin\Debug\Seating Chart.pdb
+C:\Users\dlifer\Downloads\0133852830_VB2013-208704\Instructors\Completed Tutorials\Completed Tutorials\Chapter 08\Tutorial 8-6\Seating Chart\Seating Chart\bin\Debug\Seating Chart.xml
+C:\Users\dlifer\Downloads\0133852830_VB2013-208704\Instructors\Completed Tutorials\Completed Tutorials\Chapter 08\Tutorial 8-6\Seating Chart\Seating Chart\obj\x86\Debug\Seating_Chart.Form1.resources
+C:\Users\dlifer\Downloads\0133852830_VB2013-208704\Instructors\Completed Tutorials\Completed Tutorials\Chapter 08\Tutorial 8-6\Seating Chart\Seating Chart\obj\x86\Debug\Seating_Chart.Resources.resources
+C:\Users\dlifer\Downloads\0133852830_VB2013-208704\Instructors\Completed Tutorials\Completed Tutorials\Chapter 08\Tutorial 8-6\Seating Chart\Seating Chart\obj\x86\Debug\Seating Chart.vbproj.GenerateResource.Cache
+C:\Users\dlifer\Downloads\0133852830_VB2013-208704\Instructors\Completed Tutorials\Completed Tutorials\Chapter 08\Tutorial 8-6\Seating Chart\Seating Chart\obj\x86\Debug\Seating Chart.exe
+C:\Users\dlifer\Downloads\0133852830_VB2013-208704\Instructors\Completed Tutorials\Completed Tutorials\Chapter 08\Tutorial 8-6\Seating Chart\Seating Chart\obj\x86\Debug\Seating Chart.xml
+C:\Users\dlifer\Downloads\0133852830_VB2013-208704\Instructors\Completed Tutorials\Completed Tutorials\Chapter 08\Tutorial 8-6\Seating Chart\Seating Chart\obj\x86\Debug\Seating Chart.pdb
+H:\!370 371\!Spring 16\Week 08\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.exe
+H:\!370 371\!Spring 16\Week 08\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.xml
+H:\!370 371\!Spring 16\Week 08\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.pdb
+H:\!370 371\!Spring 16\Week 08\Seating Chart NotDone\Seating Chart\bin\Debug\Seating Chart.exe
+H:\!370 371\!Spring 16\Week 08\Seating Chart NotDone\Seating Chart\bin\Debug\Seating Chart.pdb
+H:\!370 371\!Spring 16\Week 08\Seating Chart NotDone\Seating Chart\bin\Debug\Seating Chart.xml
+H:\!370 371\!Spring 16\Week 08\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating_Chart.Form1.resources
+H:\!370 371\!Spring 16\Week 08\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating_Chart.Resources.resources
+H:\!370 371\!Spring 16\Week 08\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.vbproj.GenerateResource.Cache
+H:\!370 371\Spring 17\Week 9\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.exe
+H:\!370 371\Spring 17\Week 9\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.xml
+H:\!370 371\Spring 17\Week 9\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.pdb
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\bin\Debug\Seating Chart.exe
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\bin\Debug\Seating Chart.pdb
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\bin\Debug\Seating Chart.xml
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.vbprojAssemblyReference.cache
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating_Chart.Form1.resources
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating_Chart.Resources.resources
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.vbproj.GenerateResource.cache
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.exe
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.xml
+C:\Users\brand\Desktop\Seating Chart NotDone\Seating Chart\obj\x86\Debug\Seating Chart.pdb

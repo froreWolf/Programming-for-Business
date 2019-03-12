@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\bin\Debug\Clock Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\bin\Debug\Clock Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\bin\Debug\Clock Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\bin\Debug\Clock Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\obj\Debug\Clock Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\obj\Debug\Clock_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\obj\Debug\Clock_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\obj\Debug\Clock Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\obj\Debug\Clock Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\obj\Debug\Clock Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\obj\Debug\Clock Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap06\Clock Solution\Clock Project\obj\Debug\Clock Project.pdb

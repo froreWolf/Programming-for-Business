@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\bin\Debug\Social Security Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\bin\Debug\Social Security Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\bin\Debug\Social Security Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\bin\Debug\Social Security Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\obj\Debug\Social Security Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\obj\Debug\Social_Security_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\obj\Debug\Social_Security_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\obj\Debug\Social Security Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\obj\Debug\Social Security Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\obj\Debug\Social Security Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\obj\Debug\Social Security Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\Social Security Solution-Remove\Social Security Project\obj\Debug\Social Security Project.pdb

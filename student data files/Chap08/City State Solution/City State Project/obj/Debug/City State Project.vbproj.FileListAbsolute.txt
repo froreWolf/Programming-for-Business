@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\bin\Debug\City State Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\bin\Debug\City State Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\bin\Debug\City State Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\bin\Debug\City State Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\obj\Debug\City State Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\obj\Debug\City_State_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\obj\Debug\City_State_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\obj\Debug\City State Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\obj\Debug\City State Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\obj\Debug\City State Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\obj\Debug\City State Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap08\City State Solution\City State Project\obj\Debug\City State Project.pdb

@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\bin\Debug\Cerruti Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\bin\Debug\Cerruti Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\bin\Debug\Cerruti Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\bin\Debug\Cerruti Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\obj\Debug\Cerruti Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\obj\Debug\Cerruti_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\obj\Debug\Cerruti_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\obj\Debug\Cerruti Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\obj\Debug\Cerruti Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\obj\Debug\Cerruti Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\obj\Debug\Cerruti Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap07\Cerruti Solution\Cerruti Project\obj\Debug\Cerruti Project.pdb

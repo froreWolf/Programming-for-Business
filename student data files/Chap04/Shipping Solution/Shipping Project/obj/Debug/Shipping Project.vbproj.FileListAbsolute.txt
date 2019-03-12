@@ -1,0 +1,12 @@
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\bin\Debug\Shipping Project.exe.config
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\bin\Debug\Shipping Project.exe
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\bin\Debug\Shipping Project.pdb
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\bin\Debug\Shipping Project.xml
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\obj\Debug\Shipping Project.vbprojAssemblyReference.cache
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\obj\Debug\Shipping_Project.frmMain.resources
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\obj\Debug\Shipping_Project.Resources.resources
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\obj\Debug\Shipping Project.vbproj.GenerateResource.cache
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\obj\Debug\Shipping Project.vbproj.CoreCompileInputs.cache
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\obj\Debug\Shipping Project.exe
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\obj\Debug\Shipping Project.xml
+C:\Users\Branden\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap04\Shipping Solution\Shipping Project\obj\Debug\Shipping Project.pdb

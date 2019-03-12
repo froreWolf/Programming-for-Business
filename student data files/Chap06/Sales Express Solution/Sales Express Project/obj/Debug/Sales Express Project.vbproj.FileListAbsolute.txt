@@ -1,0 +1,12 @@
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\bin\Debug\Sales Express Project.exe.config
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\bin\Debug\Sales Express Project.exe
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\bin\Debug\Sales Express Project.pdb
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\bin\Debug\Sales Express Project.xml
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\obj\Debug\Sales Express Project.vbprojAssemblyReference.cache
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\obj\Debug\Sales_Express_Project.frmMain.resources
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\obj\Debug\Sales_Express_Project.Resources.resources
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\obj\Debug\Sales Express Project.vbproj.GenerateResource.cache
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\obj\Debug\Sales Express Project.vbproj.CoreCompileInputs.cache
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\obj\Debug\Sales Express Project.exe
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\obj\Debug\Sales Express Project.xml
+C:\Users\BBarber\Google Drive\Ashland University\2018 Fall\MIS370\Projects\student data files\Chap06\Sales Express Solution\Sales Express Project\obj\Debug\Sales Express Project.pdb

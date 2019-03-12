@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\bin\Debug\Scores Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\bin\Debug\Scores Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\bin\Debug\Scores Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\bin\Debug\Scores Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\obj\Debug\Scores Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\obj\Debug\Scores_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\obj\Debug\Scores_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\obj\Debug\Scores Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\obj\Debug\Scores Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\obj\Debug\Scores Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\obj\Debug\Scores Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Scores Solution\Scores Project\obj\Debug\Scores Project.pdb

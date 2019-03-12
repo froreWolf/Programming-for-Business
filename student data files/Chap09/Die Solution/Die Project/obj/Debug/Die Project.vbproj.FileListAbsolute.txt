@@ -1,0 +1,12 @@
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\bin\Debug\Die Project.exe.config
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\bin\Debug\Die Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\bin\Debug\Die Project.pdb
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\bin\Debug\Die Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\obj\Debug\Die Project.vbprojAssemblyReference.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\obj\Debug\Die_Project.frmMain.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\obj\Debug\Die_Project.Resources.resources
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\obj\Debug\Die Project.vbproj.GenerateResource.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\obj\Debug\Die Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\obj\Debug\Die Project.exe
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\obj\Debug\Die Project.xml
+C:\Users\brand\Google Drive\Ashland University\2019 Spring\MIS371\student data files\Chap09\Die Solution\Die Project\obj\Debug\Die Project.pdb
