@@ -1,7 +1,7 @@
 ﻿' Name:         Game Show Project
 ' Purpose:      Write names to and read names 
 '               from a sequential access file
-' Programmer:   <your name> on <current date>
+' Programmer:   Branden Barber on March 14, 2019
 
 Option Explicit On
 Option Strict On
@@ -17,13 +17,13 @@ Public Class frmMain
         ' writes a name to a sequential access file
 
         ' declare a StreamWriter variable
-
+        Dim outFile As IO.StreamWriter
         ' open the file for append
-
+        outFile = IO.File.AppendText("contestants.txt")
         ' write the name on a separate line in the file
-
+        outFile.WriteLine(txtName.Text)
         ' close the file
-
+        outFile.Close()
         ' clear the list box and then set the focus
         lstContestants.Items.Clear()
         txtName.Focus()
@@ -34,12 +34,23 @@ Public Class frmMain
         ' and displays them in the interface
 
         ' declare variables
-
+        Dim inFile As IO.StreamReader
+        Dim strName As String
         ' clear previous names from the list box
         lstContestants.Items.Clear()
 
         ' determine whether the file exists
-
+        If IO.File.Exists("contestants.txt") Then
+            'open the file for input
+            inFile = IO.File.OpenText("contestants.txt")
+            'process loop instructions till end of file
+            Do Until inFile.Peek = -1
+                lstContestants.Items.Add(inFile.ReadLine)
+            Loop
+            inFile.Close()
+        Else
+            MessageBox.Show("Can't find the file", "Game Show Contestants", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
     End Sub
 
     Private Sub txtName_Enter(sender As Object, e As EventArgs) Handles txtName.Enter

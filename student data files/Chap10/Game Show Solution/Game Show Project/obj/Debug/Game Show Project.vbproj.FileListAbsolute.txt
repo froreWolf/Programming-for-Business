@@ -1,0 +1,12 @@
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\bin\Debug\Game Show Project.exe.config
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\bin\Debug\Game Show Project.exe
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\bin\Debug\Game Show Project.pdb
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\bin\Debug\Game Show Project.xml
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\obj\Debug\Game Show Project.vbprojAssemblyReference.cache
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\obj\Debug\Game_Show_Project.frmMain.resources
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\obj\Debug\Game_Show_Project.Resources.resources
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\obj\Debug\Game Show Project.vbproj.GenerateResource.cache
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\obj\Debug\Game Show Project.vbproj.CoreCompileInputs.cache
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\obj\Debug\Game Show Project.exe
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\obj\Debug\Game Show Project.xml
+C:\Users\brand\Documents\GitHub\Programming-for-Business\student data files\Chap10\Game Show Solution\Game Show Project\obj\Debug\Game Show Project.pdb
