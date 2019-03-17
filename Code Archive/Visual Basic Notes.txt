@@ -1,0 +1,299 @@
+******General Notes******
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Option Statements
+-----------------
+Option Explicit On : variables must be declared
+Option Infer Off : Variables must have a data type (Ensures that every variable is delcared with a data type)
+Option Strict On : Disallows implicit conversions
+
+operators
+---------
++ : do I need to say it to you dumbass?
+- : do I need to say it to you dumbass?
+* : do I need to say it to you dumbass?
+/ : divison
+\ : integer division
+	
+formatting
+----------
+Object.ToString("Formatting Code")
+	-C2 : will format as currency with 2 places
+	-D2 : will format as decimal with 2 places
+	-E : will format as exponent
+	-F : will format as fixed point
+	-G : will format as General
+	-N : will format as number
+	-P : will format as percent
+	-X : will format as Hexadecimal
+	
+windows form properties
+-----------------------
+tab order : found under view in the context menu
+enter button: found as "Accept Button" under properties
+
+Aesthetics
+----------
+font : Segoe UI 9pt
+
+Access keys
+-----------
+hotkeys: put & symbol in the button's text
+	ex: E&xit
+	
+try parse method
+----------------	
+<datatype>.tryparse(<incoming data>,variable)
+
+comments
+--------
+use (') to denote comments
+
+concatination
+-------------
++ : used to concatinate variables + literals
+& : used exclusively to concatinate string variables and literals
+
+Input boxes
+-----------
+InputBox("Prompt", "Title", "default response")
+use:
+	strVariable = InputBox("Prompt", "Title", "default value")
+the default response is optional
+
+MessageBox.show
+---------------
+MessageBox.show("Prompt", Title, Buttons, Icon, DefaultButton)
+
+Control Characters
+------------------
+\n : ControlChars.NewLine
+
+selection strucutures
+---------------------
+if-then-else-statement:
+	If condition Then
+		statement block when true
+	Else
+		statement block when false
+	End If
+	
+logical operators
+-----------------
+>  - greater than
+<  - less than
+>= - greater than/equal to
+<= - less than/equal to
+<> - not equal (same as !=)
+
+String methods
+--------------
+strVar.toUpper
+strVar.toLower
+
+stop certain characters
+-----------------------
+handles txtbox.keypress
+
+If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." Then
+    e.Handled = True
+End If
+
+txtTextBox.SelectAll()
+----------------------
+This method will select all text when it recieves focus making it easier to enter a new value
+
+switch statements baby! (jk lol just else if statements)
+--------------------------------------------------------
+
+actual switch statements baby! (select case)
+--------------------------------------------
+Select Case selectorExpression
+	Case "case1"
+		statements
+	Case "case2"
+		statements
+	Case else
+		statements     //poser wannabe default case
+		
+for loops
+---------
+for variable as integer = 1 to 10 step 1
+next
+
+for each loops
+--------------
+for each elementVariableName As dataType In Group
+	statements
+next
+ex
+	for Each strStateElement As String In strStates
+		lstStates.Items.Add(strStateElement)
+	next
+
+Making a program wait
+---------------------
+System.Threading.Thread.Sleep(500)	
+1000 is one second	
+
+Forcing the interface to refresh
+--------------------------------
+Me.refresh()
+
+Listboxes
+---------
+lstList.Items.Add("Item Name")
+lstList.SelectedItem = "Item Name"
+lstList.SelectedIndex = 0
+Double.TryParse(lstHours.SelectedItem.ToString, dblHours)
+
+Passing by value or Reference
+-----------------------------
+Private Sub DisplayMsg(ByVal strType as String, ByVal strTitle as String)
+-this will force a variable to pass by value
+-same for reference just use ByRef
+
+Using subroutines or functions
+------------------------------
+Private Sub SubroutineName(Parameters)
+End Sub
+
+Private Function Fun(Parameters) As Integer
+return 1
+End Sub
+
+Ask if you are sure you want to close a form
+--------------------------------------------
+Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+
+        Dim dlgButton As DialogResult
+        dlgButton = MessageBox.Show("Do you want to exit?", "Exit?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+
+        If dlgButton = Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        End If
+
+    End Sub
+
+Dialog Results
+--------------
+Page 232
+
+Abreviations
+------------
+ComboBox - cbo
+TextBox - txt
+Label - lbl
+ListBox - lst
+PictureBox - pic
+Button - btn
+DialogResult -dlg
+Random - rand
+
+Rounding
+--------
+Math.Round(value, [digits])
+Example: Math.Round(2.523, 2) = 2.52
+
+String methods
+--------------
+string.Length
+	stores an int  that holds number of characters in a string
+string.Trim
+	remove spaces from both beginning and end of string
+string.remove(startIndex,numCharstoRemove)
+	remove unwanted characters
+	numCharstoRemove is optional, if left out it just removes everything past startIndex
+string.insert(startIndex, value)
+	adds new characters in the selected spot
+string.Contains(substring)
+	returns a boolean value depending on if the substring is found
+string.IndexOf(subString, startIndex)
+	returns the starting index of the string if found
+	returns -1 if not found
+	startIndex is where it will start looking
+string.Substring(startIndex, numCharsToAccess)
+	acceses one or more characters in a string
+string.PadLeft(totalChars, padCharacter)
+	adds padding to the string on the left
+	padding character would be used like "*"C, where C means character so you can use asterisks for example
+string.PadRight(totalChars, padCharacter)
+	adds padding to the string on the right
+Like operator
+	uses patern matching to compare strings
+
+Pattern Matching
+----------------
+# - any number
+* - anything
+? - any letter
+[character list] -match anything in the brackets
+[!character list] - match anything not in the brackets
+[!a-m] - match anything not a-m
+[a-z] - match lowercase letters (a-z)
+	
+Menus
+-----
+Menu title captions should be one word only
+menu item captions can be from 1-3 words
+assign unique access keys to the menu titles and items
+follow windows menu standards
+	use book title capitialization for menu items
+shortcut keys
+	can be set in properties
+
+arrays
+------
+arrays of numbers are initialized to 0
+arrays of strings are initialized using keyword NOTHING
+arrays of booleans are initialized to false
+arrays of dates are initialized to 12:00 AM January 1, 0001
+Dim intArray(5) as Integer
+	creates an array of length 5
+	uses indeces 0-4
+Dim intArray() as Integer = {1, 2, 3, 4}
+	initializes the array to the values and size given
+intArray.length
+	gets the length
+intArray.GetUpperBound
+	gets the index of the highest element
+Array.Sort(arrayName)
+	sorts the array
+Array.Reverse(arrayName)
+	reverses the array
+
+IO using sequential access files
+--------------------------------
+stream writer
+	Dim outFile As IO.StreamWriter
+		allows you to write to a sequential access file (read line by line)
+	outFile.Write("Hello")
+		similar to Java's Print
+	outFile.WriteLine("Hello")
+		similar to Java's Printline
+	outFile.Close()
+stream reader
+	Dim inFile As IO.StreamReader
+	inFile.ReadLine
+	inFile.Peek
+		returns -1 if there are no more lines to read in from the file
+	inFile.Close()
+using the files
+	IO.File.CreateText("employee.text")
+		create in the folder of the program
+	IO.File.AppendText("F:\Chap10\Report.txt")
+		append text to the file
+	can use the path or not for either method
+	IO.File.OpenText("Employee.txt")
+		opens the file
+	If IO.File.Exists("employee.txt") Then
+		checks whether the file actually exists
+close the files
+	make sure you close everything so it clears the buffer
+
+Are you sure you want to exit
+-----------------------------
+Dim dlgResponse As DialogResult
+        dlgResponse = MessageBox.Show("Are you sure you want to exit?", "Pig Latin", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+        If dlgResponse = Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        End If

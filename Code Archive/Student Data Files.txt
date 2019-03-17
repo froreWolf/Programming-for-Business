@@ -1,0 +1,1681 @@
+******Student Data Files******
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+***Discount Calculator***
+-------------------------
+' Name:         Discount Calculator Project
+' Purpose:      Displays either a 15% discount or a 20% discount
+' Programmer:   Branden Barber on September 11, 2018
+
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnDisc15_Click(sender As Object, e As EventArgs) Handles btnDisc15.Click
+
+        Dim dblSales As Double
+        Dim dblDiscount15 As Double
+
+        Double.TryParse(txtSales.Text, dblSales)
+        dblDiscount15 = dblSales * 0.15
+        'lblDiscount.Text = Convert.ToString(dblDiscount15)
+        lblDiscount.Text = dblDiscount15.ToString("C2")
+
+    End Sub
+
+    Private Sub btnDisc20_Click(sender As Object, e As EventArgs) Handles btnDisc20.Click
+
+        Dim dblSales As Double
+        Dim dblDiscount20 As Double
+
+        Double.TryParse(txtSales.Text, dblSales)
+        dblDiscount20 = dblSales * 0.2
+        'lblDiscount.Text = Convert.ToString(dblDiscount15)
+        lblDiscount.Text = dblDiscount20.ToString("C2")
+
+    End Sub
+End Class
+
+***Total Scores***
+------------------
+' Name:         Total Scores Project
+' Purpose:      Displays the total of the scores entered by the user
+' Programmer:   Branden Barber on September 11, 2018
+
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+
+    ' class-level variable used
+    ' to accumulate the scores
+    'Private decTotal As Decimal
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+
+        Dim decScore As Decimal
+        Static decTotal As Decimal 'this is only precedure level but a static variable will stay
+        'total the scores
+        Decimal.TryParse(txtScore.Text, decScore)
+        decTotal += decScore
+        lblTotal.Text = Convert.ToString(decTotal)
+        txtScore.Focus()
+
+    End Sub
+
+End Class
+
+***Area Calculator***
+---------------------
+' Name:         Area Calculator Project
+' Purpose:      Displays the area of a circle
+' Programmer:   Branden Barber on September 11, 2018
+
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+
+        Const dblPI As Double = 3.14153
+        Dim dblRadius As Double
+        Dim dblArea As Double
+
+        Double.TryParse(txtRadius.Text, dblRadius)
+        dblArea = dblPI * dblRadius ^ 2
+        lblArea.Text = Format(dblArea, "Standard")
+
+    End Sub
+End Class
+
+***Debug Program A CH3***
+-------------------------
+' Name:         Debug Project
+' Purpose:      Displays the number of times the Count button is pressed
+' Programmer:   Branden Barber on September 27, 2018
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private intNumTimes As Integer
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnCount_Click(sender As Object, e As EventArgs) Handles btnCount.Click
+        ' display the number of times the Count button is pressed
+
+        'Dim intNumTimes As Integer 'move to the topppppppp~
+        'You could also change this into a static variable and kee in here in the procedure
+
+        ' add 1 to the variable each time the button is pressed
+        intNumTimes = intNumTimes + 1
+
+        ' display message
+        lblMessage.Text = "Number of times you pressed the Count button: " &
+            Convert.ToString(intNumTimes)
+    End Sub
+End Class
+
+***Debug Program C CH3***
+-------------------------
+' Name:         Debug Project
+' Purpose:      Calculates the average of three test scores
+' Programmer:   <your name> on <current date>
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        ' calculates the average of three test scores
+
+        Dim decTest1 As Decimal
+        Dim decTest2 As Decimal
+        Dim decTest3 As Decimal
+        Dim decAverage As Decimal
+
+        ' convert input to numbers
+        Decimal.TryParse(txtTest1.Text, decTest1)
+        Decimal.TryParse(txtTest2.Text, decTest2) 'found an oddity here, changed txtTest1.Text to txtTest2.Text
+        Decimal.TryParse(txtTest3.Text, decTest3) 'found another one. It was putting it into decTest2 instead of 3 so decTest3 stayed as 0
+
+        ' calculate and display the average
+        decAverage = (decTest1 + decTest2 + decTest3) / 3 'added parenthese to fix the order of operations
+        lblAverage.Text = decAverage.ToString("N2")
+    End Sub
+End Class
+
+***Lowest and Highest***
+------------------------
+' Name:         Lowest and Highest Project
+' Purpose:      Display the lowest and highest of two scores
+' Programmer:   Branden Barber on October 4, 2018
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub ClearLabel(sender As Object, e As EventArgs) Handles txtScore1.TextChanged, txtScore2.TextChanged
+        ' clear message
+
+        lblMessage.Text = String.Empty
+    End Sub
+
+    Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
+        'first get the data from the textBoxes and store them in variables
+        Dim dblScore1 As Double, dblScore2 As Double
+        Double.TryParse(txtScore1.Text, dblScore1)
+        Double.TryParse(txtScore2.Text, dblScore2)
+        'if statement to decide which score is higher
+        If dblScore1 > dblScore2 Then
+            lblMessage.Text = "The highest score is " & dblScore1.ToString("F2") &
+                ControlChars.NewLine & "The lowest score is " & dblScore2.ToString("F1")
+        Else
+            lblMessage.Text = "The highest score is " & dblScore2.ToString("F2") &
+                ControlChars.NewLine & "The lowest score is " & dblScore1.ToString("F1")
+        End If
+    End Sub
+End Class
+
+***Sum or Difference***
+-----------------------
+' Name:         Sum or Difference Project
+' Purpose:      Display the sum of two numbers or
+'               the difference between both numbers
+' Programmer:   Branden Barber on October 9, 2018
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub ClearLabel(sender As Object, e As EventArgs) Handles txtOperation.TextChanged, txtFirst.TextChanged, txtSecond.TextChanged
+        ' clear lblAnswer
+
+        lblAnswer.Text = String.Empty
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+
+        Dim dblNum1 As Double
+        Dim dblNum2 As Double
+        Dim dblResult As Double
+        Dim strOption As String
+
+        Double.TryParse(txtFirst.Text, dblNum1)
+        Double.TryParse(txtSecond.Text, dblNum2)
+        strOption = txtOperation.Text
+
+        If strOption = "1" Then
+            dblResult = dblNum1 + dblNum2
+            lblAnswer.Text = "The sum is " & dblResult.ToString("N2") & "."
+        Else
+            dblResult = dblNum1 - dblNum2
+            lblAnswer.Text = "The difference is " & dblResult.ToString("N2") & "."
+        End If
+    End Sub
+End Class
+
+***Gross Pay***
+---------------
+' Name:         Gross Pay Project
+' Purpose:      Display the gross pay
+' Programmer:   Branden Barber on October 16, 2018
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtHours_TextChanged(sender As Object, e As EventArgs) Handles txtHours.TextChanged
+        ' clear gross pay
+
+        lblGross.Text = String.Empty
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        'calculate gross pay
+
+        Const dblRATE As Double = 10.75
+        Dim dblHours As Double
+
+        'store hours in a variable
+        Double.TryParse(txtHours.Text, dblHours)
+
+        If dblHours < 0 OrElse dblHours > 40 Then
+            lblGross.Text = "Incorrect number of hours"
+        Else
+            'calculate and display gross pay
+            lblGross.Text = (dblHours * dblRATE).ToString("C2")
+        End If
+    End Sub
+End Class
+
+***Savings Solution***
+----------------------
+' Name:         Savings Project
+' Purpose:      Display a savings account balance
+' Programmer:   <Branden Barber> on <November 1, 2018>
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        ' calculate account balance
+
+        Dim dblBalance As Double
+        Dim dblRate As Double
+        Dim dblInterest As Double
+        Dim intYears As Integer
+        Double.TryParse(txtDeposit.Text, dblBalance)
+        Double.TryParse(txtRate.Text, dblRate)
+        Do While dblBalance < 1000000 AndAlso dblBalance > 0 AndAlso dblRate > 0
+            dblInterest = dblBalance * dblRate
+            dblBalance = dblBalance + dblInterest
+            intYears += 1
+        Loop
+        lblBalance.Text = "You will have " &
+            dblBalance.ToString("C2") &
+            " in " & intYears.ToString & " years."
+    End Sub
+
+    Private Sub txtDeposit_Enter(sender As Object, e As EventArgs) Handles txtDeposit.Enter
+        txtDeposit.SelectAll()
+    End Sub
+
+    Private Sub txtRate_Enter(sender As Object, e As EventArgs) Handles txtRate.Enter
+        txtRate.SelectAll()
+    End Sub
+
+    Private Sub CancelKeys(sender As Object, e As KeyPressEventArgs) Handles txtDeposit.KeyPress, txtRate.KeyPress
+        ' allows the text box to accept only numbers, the period, and the Backspace key
+
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> ControlChars.Back Then
+            ' cancel the key
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub ClearLabel(sender As Object, e As EventArgs) Handles txtDeposit.TextChanged, txtRate.TextChanged
+        lblBalance.Text = String.Empty
+    End Sub
+End Class
+
+***addition solution***
+-----------------------
+' Name:         Addition Project
+' Purpose:      Display the sum of the numbers entered
+' Programmer:   <your name> on <current date>
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    ' class-level accumulator
+    Private intSum As Integer
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtNumber_Enter(sender As Object, e As EventArgs) Handles txtNumber.Enter
+        txtNumber.SelectAll()
+    End Sub
+
+    Private Sub txtNumber_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNumber.KeyPress
+        ' allow the text box to accept only numbers and the Backspace
+
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso
+            e.KeyChar <> ControlChars.Back Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtNumber_TextChanged(sender As Object, e As EventArgs) Handles txtNumber.TextChanged
+        lblSum.Text = String.Empty
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Dim intNum As Integer
+        txtList.Text = txtList.Text & txtNumber.Text & ControlChars.NewLine
+
+        Integer.TryParse(txtNumber.Text, intNum)
+
+        intSum += intNum
+        lblSum.Text = intSum.ToString
+
+        txtNumber.Focus()
+        txtNumber.SelectAll()
+    End Sub
+
+    Private Sub btnStartOver_Click(sender As Object, e As EventArgs) Handles btnStartOver.Click
+        txtList.Clear()
+        txtNumber.Clear()
+        lblSum.Text = ""
+        intSum = 0
+    End Sub
+End Class
+
+***Sales Express***
+-------------------
+' Name:         Sales Express Project
+' Purpose:      Displays the average sales amount
+' Programmer:   <your name> on <current date>
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        ' calculates the average sales amount
+
+        Const strPROMPT As String =
+            "Enter a sales amount. " &
+            ControlChars.NewLine &
+            "Click Cancel or leave blank to end."
+        Const strTITLE As String = "Sales Entry"
+        Dim strInputSales As String
+        Dim decSales As Decimal
+        Dim intNumSales As Integer
+        Dim decTotalSales As Decimal
+        Dim decAvgSales As Decimal
+
+        ' get first sales amount
+        strInputSales = InputBox(strPROMPT, strTITLE, "0")
+        ' repeat as long as the user enters a sales amount
+        Do While strInputSales <> String.Empty
+            'convert the sales amount to a number
+            Decimal.TryParse(strInputSales, decSales)
+            'display the sales amount in the text box
+            txtList.Text = txtList.Text & decSales.ToString("N2") & ControlChars.NewLine
+            'update the counter and accumulator
+            intNumSales += 1
+            decTotalSales += decSales
+            'get next sales amount
+            strInputSales = InputBox(strPROMPT, strTITLE)
+        Loop
+
+        ' verify that the counter is greater than 0
+        If intNumSales > 0 Then
+            decAvgSales = decTotalSales / intNumSales
+            lblAvg.Text = decAvgSales.ToString("C2")
+        Else
+            lblAvg.Text = "N/A"
+        End If
+    End Sub
+
+End Class
+
+***Clock Solution***
+--------------------
+' Name:         Clock Project
+' Purpose:      Displays minutes and seconds
+' Programmer:   Branden Barber on January 8, 2018
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
+        'displays minutes (0 through 2 only)
+        'and seconds (0 through 59 only)
+
+        For intMinutes As Integer = 0 To 30
+            lblMinutes.Text = intMinutes.ToString
+            For intSeconds As Integer = 0 To 59
+                lblSeconds.Text = intSeconds.ToString
+                'refresh interface and then pause execution
+                Me.Refresh()
+                System.Threading.Thread.Sleep(1000)
+            Next intSeconds
+        Next intMinutes
+    End Sub
+End Class
+
+***Savings Solution Nested For***
+---------------------------------
+' Name:         Savings Project
+' Purpose:      Display a savings account balance
+'               for each of 5 years using rates
+'               from 3% to 7% in increments of 1%
+' Programmer:   <your name> on <current date>
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        ' calculate account balances for each of
+        ' five years, using rates from 3% to 7%
+        ' in increments of 1%
+
+        Dim dblBalance As Double
+        Dim dblInterest As Double
+        Dim dblBalance2 As Double
+        '
+        Double.TryParse(txtDeposit.Text, dblBalance)
+        Double.TryParse(txtDeposit.Text, dblBalance2)
+
+        txtBalance.Text = "Year" & ControlChars.Tab & "Rate" & ControlChars.Tab & "Balance" & ControlChars.NewLine
+        For intYear As Integer = 1 To 5
+            txtBalance.Text = txtBalance.Text & intYear.ToString & ControlChars.NewLine
+            For dblRate As Double = 0.03 To 0.07 Step 0.01
+                dblBalance = dblBalance2
+                For intNumCalcs As Integer = 1 To intYear
+                    dblInterest = dblBalance * dblRate
+                    dblBalance = dblBalance + dblInterest
+                Next intNumCalcs
+                txtBalance.Text = txtBalance.Text & ControlChars.Tab & dblRate.ToString("P0") & ControlChars.Tab &
+                dblBalance.ToString("C2") & ControlChars.NewLine
+            Next dblRate
+        Next intYear
+        ' calculate and display account balances 
+
+    End Sub
+
+    Private Sub txtDeposit_Enter(sender As Object, e As EventArgs) Handles txtDeposit.Enter
+        txtDeposit.SelectAll()
+    End Sub
+
+    Private Sub CancelKeys(sender As Object, e As KeyPressEventArgs) Handles txtDeposit.KeyPress
+        ' allows the text box to accept only numbers, the period, and the Backspace key
+
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> "." AndAlso e.KeyChar <> ControlChars.Back Then
+            ' cancel the key
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub ClearLabel(sender As Object, e As EventArgs) Handles txtDeposit.TextChanged
+        txtBalance.Text = String.Empty
+    End Sub
+End Class
+
+***Gross Pay Solution***
+------------------------
+' Name:         Gross Pay Project
+' Purpose:      Displays an employee's gross pay
+' Programmer:   <your name> on <current date>
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        Dim dblHours As Double, dblRate As Double, dblGrossPay As Double
+        Double.TryParse(lstHours.SelectedItem.ToString, dblHours)
+        Double.TryParse(lstRates.SelectedItem.ToString, dblRate)
+
+        dblGrossPay = dblHours * dblRate
+        lblGross.Text = dblGrossPay.ToString("N2")
+
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'populate lists
+        For decHours As Decimal = 0.5D To 40D Step 0.5D
+            lstHours.Items.Add(decHours.ToString("N1"))
+        Next
+        For decRates As Decimal = 8D To 15D Step 0.5D
+            lstRates.Items.Add(decRates.ToString("N2"))
+        Next
+        'select an option
+        lstHours.SelectedIndex = 79
+        lstRates.SelectedIndex = 4
+    End Sub
+
+
+End Class
+
+***Gross Pay Sub***
+-------------------
+' Name:         Gross Pay Project
+' Purpose:      Displays an employee's gross pay
+' Programmer:   Branden Barber on January 22, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ' fill list boxes with values
+
+        For decHours As Decimal = 0.5D To 40D Step 0.5D
+            lstHours.Items.Add(decHours.ToString("N1"))
+        Next decHours
+        lstHours.SelectedItem = "40.0"
+
+        For decRates As Decimal = 8D To 15D Step 0.5D
+            lstRates.Items.Add(decRates.ToString("N2"))
+        Next decRates
+        lstRates.SelectedIndex = 4
+
+    End Sub
+
+    Private Sub ClearLabel(sender As Object, e As EventArgs) Handles lstHours.SelectedValueChanged, lstRates.SelectedValueChanged
+        ' clear the gross pay
+
+        lblGross.Text = String.Empty
+
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        ' calculate gross pay
+
+        Dim decHours As Decimal
+        Dim decRate As Decimal
+        Dim decGross As Decimal
+
+        Decimal.TryParse(lstHours.SelectedItem.ToString, decHours)
+        Decimal.TryParse(lstRates.SelectedItem.ToString, decRate)
+
+
+        Call CalcGross(decHours, decRate, decGross)
+
+        lblGross.Text = decGross.ToString("C2")
+
+    End Sub
+
+    Private Sub CalcGross(ByVal decHoursWorked As Decimal, ByVal decPayRate As Decimal, ByRef decGross As Decimal)
+        decGross = decHoursWorked * decPayRate
+    End Sub
+End Class
+
+***Gross Pay Function***
+------------------------
+' Name:         Gross Pay Project
+' Purpose:      Displays an employee's gross pay
+' Programmer:   Branden Barber on January 22, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ' fill list boxes with values
+
+        For decHours As Decimal = 0.5D To 40D Step 0.5D
+            lstHours.Items.Add(decHours.ToString("N1"))
+        Next decHours
+        lstHours.SelectedItem = "40.0"
+
+        For decRates As Decimal = 8D To 15D Step 0.5D
+            lstRates.Items.Add(decRates.ToString("N2"))
+        Next decRates
+        lstRates.SelectedIndex = 4
+
+    End Sub
+
+    Private Sub ClearLabel(sender As Object, e As EventArgs) Handles lstHours.SelectedValueChanged, lstRates.SelectedValueChanged
+        ' clear the gross pay
+
+        lblGross.Text = String.Empty
+
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        ' calculate gross pay
+
+        Dim decHours As Decimal
+        Dim decRate As Decimal
+        Dim decGross As Decimal
+
+        Decimal.TryParse(lstHours.SelectedItem.ToString, decHours)
+        Decimal.TryParse(lstRates.SelectedItem.ToString, decRate)
+
+
+        decGross = CalcGross(decHours, decRate)
+
+        lblGross.Text = decGross.ToString("C2")
+
+    End Sub
+
+    Private Function CalcGross(ByVal decHoursWorked As Decimal, ByVal decPayRate As Decimal) As Decimal
+        Return decHoursWorked * decPayRate
+    End Function
+End Class
+
+***Grade Calculator***
+----------------------
+' Name:         Grade Calculator Project
+' Purpose:      Displays the total points earned and the grade for
+'               any number of students
+' Programmer:   Branden Barber on January 17
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnAssign_Click(sender As Object, e As EventArgs) Handles btnAssign.Click
+        Dim dblTotal As Double, dblScore As Double
+        Dim dlgResult As DialogResult
+
+        Do
+            dblTotal = 0
+            For intCounter As Integer = 1 To 3
+                Double.TryParse(InputBox("Please enter the score for test " & intCounter & "."), dblScore)
+                dblTotal += dblScore
+            Next
+            lblTotalPoints.Text = dblTotal.ToString("N2")
+            chooseGrade(dblTotal)
+            dlgResult = MessageBox.Show("Would you like to enter another score?", "Again?", MessageBoxButtons.YesNo)
+        Loop While (dlgResult = Windows.Forms.DialogResult.Yes)
+
+    End Sub
+
+    Private Sub chooseGrade(dblTotal As Double)
+
+        Select Case (dblTotal)
+            Case 0 To 179.99
+                lblGrade.Text = "F"
+            Case 180 To 209.99
+                lblGrade.Text = "D"
+            Case 210 To 239.99
+                lblGrade.Text = "C"
+            Case 240 To 269.99
+                lblGrade.Text = "B"
+            Case 270 To 300
+                lblGrade.Text = "A"
+        End Select
+
+    End Sub
+End Class
+
+***Product ID***
+----------------
+' Name:         Product Project
+' Purpose:      Displays the product IDs entered by the user
+' Programmer:   <your name> on <current date>
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtId_Enter(sender As Object, e As EventArgs) Handles txtId.Enter
+        txtId.SelectAll()
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        ' adds a product ID to a list
+
+        Dim strId As String
+        strId = txtId.Text
+        ' remove any leading and trailing spaces
+        strId = strId.Trim()
+        ' verify length
+        If strId.Length = 5 Then
+            lstId.Items.Add(strId)
+        Else
+            MessageBox.Show("The ID must contain 5 characters.", "Product ID", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+
+        txtId.Focus()
+    End Sub
+
+End Class
+
+***CH 8 You Do It 2***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim strinput As String = TextBox1.Text
+
+        strinput = strinput.Trim
+
+        If strinput.Length > 3 Then
+            strinput = strinput.Insert(1, "#")
+        End If
+
+        strinput = strinput.PadRight(10, "*"c)
+        Label1.Text = strinput
+    End Sub
+End Class
+
+***Net Pay CH 8***
+------------------
+' Name:         Net Pay Project
+' Purpose:      Display the net pay with a dollar sign, two decimal places, and asterisks
+' Programmer:   <your name> on <current date>
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtNetPay_Enter(sender As Object, e As EventArgs) Handles txtNetPay.Enter
+        txtNetPay.SelectAll()
+    End Sub
+
+    Private Sub txtNetPay_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNetPay.KeyPress
+        ' accept only numbers, the period, and the Backspace
+
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso
+            e.KeyChar <> "." AndAlso e.KeyChar <> ControlChars.Back Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtNetPay_TextChanged(sender As Object, e As EventArgs) Handles txtNetPay.TextChanged
+        lblFormatted.Text = String.Empty
+    End Sub
+
+    Private Sub btnFormat_Click(sender As Object, e As EventArgs) Handles btnFormat.Click
+        ' format the net pay with two decimal places, then 
+        ' pad with asterisks and insert a dollar sign as the 
+        ' first character
+
+        Dim decNet As Decimal
+        Dim strFormatted As String
+
+        Decimal.TryParse(txtNetPay.Text, decNet)
+
+        ' format the net pay with two decimal places
+        strFormatted = decNet.ToString("N2")
+        ' pad the net pay with asterisks until its length is 10
+        If strFormatted.Length < 10 Then
+            strFormatted = strFormatted.PadLeft(10, "*"c)
+        End If
+        ' insert a dollar sign as the first character
+        strFormatted = strFormatted.Insert(0, "$")
+        ' display the net pay, then set the focus
+        lblFormatted.Text = strFormatted
+        txtNetPay.Focus()
+    End Sub
+End Class
+
+***City State***
+----------------
+' Name:         City State Project
+' Purpose:      Displays the index of the comma in a string
+' Programmer:   Branden Barber on January 29, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtCityState_Enter(sender As Object, e As EventArgs) Handles txtCityState.Enter
+        txtCityState.SelectAll()
+    End Sub
+
+    Private Sub txtCityState_TextChanged(sender As Object, e As EventArgs) Handles txtCityState.TextChanged
+        lblCommaIndex.Text = String.Empty
+    End Sub
+
+    Private Sub btnLocate_Click(sender As Object, e As EventArgs) Handles btnLocate.Click
+        ' locates the comma in a string and then 
+        ' displays its index
+
+        Dim strCityState As String
+        Dim intCommaIndex As Integer
+
+        strCityState = txtCityState.Text
+
+        ' determine the comma's index
+        intCommaIndex = strCityState.IndexOf(",")
+
+        lblCommaIndex.Text = intCommaIndex.ToString
+        txtCityState.Focus()
+    End Sub
+
+End Class
+
+***Rearranged Name***
+---------------------
+' Name:         Rearrange Name Project
+' Purpose:      Change a name from first, space, and last 
+'               to last, comma, space, and first
+' Programmer:   Branden Barber on Feb 5, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnRearrange_Click(sender As Object, e As EventArgs) Handles btnRearrange.Click
+        ' rearranges and then displays a name
+
+        Dim strName As String
+        Dim strFirstName As String
+        Dim strLastName As String
+        Dim intIndex As Integer
+
+        ' assign the input to a variable
+        strName = txtName.Text.Trim
+
+        ' search for the space in the name
+        Dim bolSpaceFound As Boolean = False
+        intIndex = strName.IndexOf(" ")
+        If intIndex <> -1 Then
+            bolSpaceFound = True
+        End If
+
+        ' if the input contains a space
+        If bolSpaceFound Then
+
+            ' separate the first and last names
+            strFirstName = strName.Substring(0, intIndex)
+            strLastName = strName.Substring(intIndex + 1)
+            ' display last name, comma, space, and first name
+            lblRearrangedName.Text = strLastName & ", " & strFirstName
+        Else    ' the name does not contain a space
+            MessageBox.Show("Invalid name format",
+                            "Rearrange Name",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information)
+        End If
+    End Sub
+End Class
+
+***Modified Product ID***
+-------------------------
+' Name:         Product Project
+' Purpose:      Displays the product IDs entered by the user
+' Programmer:   Branden Barber on Feb 5, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtId_Enter(sender As Object, e As EventArgs) Handles txtId.Enter
+        txtId.SelectAll()
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        ' adds a product ID to a list
+
+        Dim strId As String
+        strId = txtId.Text
+        ' remove any leading and trailing spaces and then convert to upper case
+        strId = strId.Trim().ToUpper
+        ' verify that the ID contains 3 letters followed by 2 numbers
+        If strId Like "[A-Z][A-Z][A-Z]##" Then
+            lstId.Items.Add(strId)
+        Else
+            MessageBox.Show("Invalid product ID.", "Product ID", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+
+        txtId.Focus()
+    End Sub
+
+End Class
+
+***Zip Solution***
+------------------
+' Name:         Zip Project
+' Purpose:      Display a shipping charge
+' Programmer:   Branden Barber on February 13, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtZip_Enter(sender As Object, e As EventArgs) Handles txtZip.Enter
+        txtZip.SelectAll()
+    End Sub
+
+    Private Sub txtZip_TextChanged(sender As Object, e As EventArgs) Handles txtZip.TextChanged
+        lblShipping.Text = String.Empty
+    End Sub
+
+    Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
+        'get the zipcode and store in a variable
+        Dim strZip As String = txtZip.Text
+        'check if the zip code is valid
+        If strZip Like "#####" AndAlso (strZip.Substring(0, 3) Like "605" OrElse strZip.Substring(0, 3) Like "606") Then
+            If strZip.Substring(0, 3) Like "605" Then
+                lblShipping.Text = "$25"
+            Else
+                lblShipping.Text = "$30"
+            End If
+        Else
+            lblShipping.Text = "Invalid Zip"
+        End If
+
+
+    End Sub
+
+    Private Sub txtZip_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtZip.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back Then
+            e.Handled = True
+        End If
+    End Sub
+End Class
+
+***Social Security Solution***
+------------------------------
+' Name:         Social Security Project
+' Purpose:      Removes the dashes from a social security number
+' Programmer:   Branden Barber on February 13, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtNumber_Enter(sender As Object, e As System.EventArgs) Handles txtNumber.Enter
+        txtNumber.SelectAll()
+    End Sub
+
+    Private Sub txtNumber_TextChanged(sender As Object, e As System.EventArgs) Handles txtNumber.TextChanged
+        lblNumber.Text = String.Empty
+    End Sub
+
+    Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
+        'get input and store in variable
+        Dim strInput As String = txtNumber.Text
+        'test if the input is valid
+        If strInput Like "###-##-####" Then
+            strInput = strInput.Remove(3, 1)
+            strInput = strInput.Remove(5, 1)
+            lblNumber.Text = strInput
+        Else
+            lblNumber.Text = "Invalid!"
+        End If
+
+    End Sub
+End Class
+
+***States Solution***
+---------------------' Name:         States Project
+' Purpose:      Displays the selected list box item
+' Programmer:   Branden Barber on February 19, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ' fills the list box with array values and
+        ' then selects the first item
+        Dim strStates() As String = {"Alaska", "Colorado", "Ohio", "Florida"}
+
+        For i As Integer = 0 To strStates.GetUpperBound(0)
+            lstStates.Items.Add(strStates(i))
+        Next
+
+        lstStates.SelectedIndex = 0
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub lstMonths_SelectedValueChanged(sender As Object, e As EventArgs) Handles lstStates.SelectedValueChanged
+        ' displays the selected item in a label control
+
+        lblSelectedItem.Text = lstStates.SelectedItem.ToString
+    End Sub
+End Class
+
+***States Solution For Each***
+------------------------------
+' Name:         States Project
+' Purpose:      Displays the selected list box item
+' Programmer:   Branden Barber on February 19, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ' fills the list box with array values and
+        ' then selects the first item
+
+        Dim strStates() As String = {"Alaska", "Colorado", "Ohio", "Florida"}
+
+        For Each i As String In strStates
+            lstStates.Items.Add(i)
+        Next
+
+        lstStates.SelectedIndex = 0
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub lstMonths_SelectedValueChanged(sender As Object, e As EventArgs) Handles lstStates.SelectedValueChanged
+        ' displays the selected item in a label control
+
+        lblSelectedItem.Text = lstStates.SelectedItem.ToString
+    End Sub
+End Class
+
+***Brewer's Solution***
+-----------------------
+' Name:         Brewers Project
+' Purpose:      Displays the total pounds sold and the 
+'               average pounds sold during a 6-month period
+' Programmer:   Branden Barber on February 19, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        ' displays the total and average pounds sold
+        Dim dblPoundsPerMonth() As Double = {170.5, 224, 190.5, 193, 250.5, 236}
+        Dim dblTotal As Double, dblAvg As Double
+
+        For Each i As Double In dblPoundsPerMonth
+            dblTotal += i
+        Next
+
+        dblAvg = dblTotal / dblPoundsPerMonth.Length
+        'add to labels
+        lblTotal.Text = dblTotal.ToString("N2")
+        lblAvg.Text = dblAvg.ToString("N2")
+
+
+    End Sub
+End Class
+
+***Scores Application***
+------------------------
+' Name:         Scores Project
+' Purpose:      Display the number of students earning a specific score
+' Programmer:   Branden Barber on February 21, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
+
+        Dim intScores() As Integer = {88, 72, 99, 20, 66, 95, 99, 100, 72, 88, 78, 45, 57, 89, 95, 78, 75, 88, 72, 88}
+        Dim intInput As Integer, intCounter As Integer
+        Integer.TryParse(InputBox("Please Enter a Score", "Scores"), intInput)
+
+        For Each num As Integer In intScores
+            If num = intInput Then
+                intCounter += 1
+            End If
+        Next
+
+        MessageBox.Show(intCounter.ToString & " students have achieved the score " & intInput.ToString, "scores", MessageBoxButtons.OK)
+    End Sub
+End Class
+
+***Scores Solution Modified***
+------------------------------
+' Name:         Scores Project
+' Purpose:      Display the number of students earning a specific score
+' Programmer:   Branden Barber on February 21, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
+
+        Dim intScores() As Integer = {88, 72, 99, 20, 66, 95, 99, 100, 72, 88, 78, 45, 57, 89, 95, 78, 75, 88, 72, 88}
+        Dim intInput1 As Integer, intInput2 As Integer, intCounter As Integer
+        Integer.TryParse(InputBox("Please minimum score", "Scores"), intInput1)
+        Integer.TryParse(InputBox("Please maximum score", "Scores"), intInput2)
+
+        For Each num As Integer In intScores
+            If num > intInput1 AndAlso num < intInput2 OrElse num = intInput1 OrElse num = intInput2 Then
+                intCounter += 1
+            End If
+        Next
+
+        MessageBox.Show(intCounter.ToString & " students have achieved scores between " & intInput1.ToString &
+                        " and " & intInput2.ToString & ".", "scores", MessageBoxButtons.OK)
+    End Sub
+End Class
+
+***Rose Solution***
+-------------------
+' Name:         Rose Project
+' Purpose:      Displays the price of a ticket
+' Programmer:   Branden Barber on February 26, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private dblPrices() As Double = {103, 95, 75.5, 32.5, 88}
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub lstSection_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstSection.SelectedIndexChanged
+        lblPrice.Text = String.Empty
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lstSection.Items.Add("A")
+        lstSection.Items.Add("B")
+        lstSection.Items.Add("C")
+        lstSection.Items.Add("D")
+        lstSection.SelectedIndex = 0
+    End Sub
+
+    Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
+
+        lblPrice.Text = dblPrices(lstSection.SelectedIndex).ToString
+    End Sub
+End Class
+
+***Warren Solution***
+---------------------
+' Name:         Warren Project
+' Purpose:      Display the amount sold for each candy type
+' Programmer:   Branden Barber on February 26, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ' fill the list box with values
+
+        lstCandy.Items.Add("Choco Bar")
+        lstCandy.Items.Add("Choco Bar-Peanuts")
+        lstCandy.Items.Add("Kit Kat")
+        lstCandy.Items.Add("Peanut Butter Cups")
+        lstCandy.Items.Add("Take 5 Bar")
+        lstCandy.SelectedIndex = 0
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        ' add amount sold to the appropriate total
+
+
+        ' declare array and variables
+        Static intCandies(4) As Integer
+        Dim intSold As Integer
+        Dim intSub As Integer
+
+        Integer.TryParse(txtSold.Text, intSold)
+        intSub = lstCandy.SelectedIndex
+
+        ' update array value
+        If intSub <= intCandies.GetUpperBound(0) Then
+            intCandies(intSub) += intSold
+        Else
+            MessageBox.Show("Can't update this candy's sales.", "Warren School", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+
+        ' display array values
+        lblChocoBar.Text = intCandies(0).ToString
+        lblChocoBarPeanuts.Text = intCandies(1).ToString
+        lblKitKat.Text = intCandies(2).ToString
+        lblPeanutButCups.Text = intCandies(3).ToString
+        lblTake5Bar.Text = intCandies(4).ToString
+
+
+        txtSold.Focus()
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtSold_Enter(sender As Object, e As EventArgs) Handles txtSold.Enter
+        txtSold.SelectAll()
+    End Sub
+
+    Private Sub txtSold_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSold.KeyPress
+        ' allow numbers, the hyphen, and the Backspace
+
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso
+            e.KeyChar <> "-" AndAlso
+            e.KeyChar <> ControlChars.Back Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub ClearLabels(sender As Object, e As EventArgs) Handles txtSold.TextChanged, lstCandy.SelectedIndexChanged
+        lblChocoBar.Text = String.Empty
+        lblChocoBarPeanuts.Text = String.Empty
+        lblKitKat.Text = String.Empty
+        lblPeanutButCups.Text = String.Empty
+        lblTake5Bar.Text = String.Empty
+    End Sub
+End Class
+
+***Treasures Solution Parallel***
+------------------------
+' Name:         Treasures Project
+' Purpose:      Display an item's price
+' Programmer:   Branden Barber on February 26, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    ' declare parallel arrays
+    Private strIds() As String = {"BX35", "CR20", "FE15", "KW10", "MM67"}
+    Private intPrices() As Integer = {13, 10, 12, 24, 4}
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtId_Enter(sender As Object, e As EventArgs) Handles txtId.Enter
+        txtId.SelectAll()
+    End Sub
+
+    Private Sub txtId_TextChanged(sender As Object, e As EventArgs) Handles txtId.TextChanged
+        lblPrice.Text = String.Empty
+    End Sub
+
+    Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
+        'display the price associated with an ID
+        Dim strSearchForId As String
+        Dim intSub As Integer
+
+        strSearchForId = txtId.Text
+
+        'search the strIds array for the ID
+        'continue searching untill the end
+        'of the array or the ID is found
+        Do Until intSub = strIds.Length OrElse strSearchForId = strIds(intSub)
+            intSub += 1
+        Loop
+
+        If intSub < strIds.Length Then
+            lblPrice.Text = intPrices(intSub).ToString("C2")
+        Else
+            MessageBox.Show("Invalid ID", "Treasures", MessageBoxButtons.OK,
+                MessageBoxIcon.Information)
+        End If
+    End Sub
+End Class
+
+***Die Solution***
+------------------
+' Name:         Die Project
+' Purpose:      Displays the number of times 
+'               each die face appears
+' Programmer:   Branden Barber on February 26, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    ' declare arrays
+    Private picDice(6) As PictureBox
+    Private lblCounters(6) As Label
+    Private intCounters(6) As Integer
+
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ' fill picture box and label arrays
+        picDice = {picPlaceHolder, picDie1, picDie2, picDie3, picDie4, picDie5, picDie6}
+        lblCounters = {lblPlaceHolder, lbl1, lbl2, lbl3, lbl4, lbl5, lbl6}
+
+    End Sub
+
+    Private Sub btnRoll_Click(sender As Object, e As EventArgs) Handles btnRoll.Click
+        ' calculates and displays the number 
+        ' of times each die face appears
+
+        Dim randGen As New Random
+        Dim intRand As Integer
+
+        'generate a random number 1-6
+        intRand = randGen.Next(1, 7)
+        'display current roll of the die
+        picRandDie.Image = picDice(intRand).Image
+        'update associated coutner
+        intCounters(intRand) += 1
+        'display updated counter
+        lblCounters(intRand).Text = intCounters(intRand).ToString
+
+    End Sub
+
+    Private Sub btnStartOver_Click(sender As Object, e As EventArgs) Handles btnStartOver.Click
+        ' reset the counters and clear the
+        ' counter labels
+
+        For intSub As Integer = 1 To 6
+            intCounters(intSub) = 0
+            lblCounters(intSub).Text = String.Empty
+        Next intSub
+
+    End Sub
+End Class
+
+***Car Sales Solution***
+------------------------
+' Name:         Car Sales Project
+' Purpose:      Display the amount sold for each car type
+' Programmer:   Branden Barber on February 28, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ' fill the list box with values
+
+        lstCarType.Items.Add("New")
+        lstCarType.Items.Add("Used")
+        lstCarType.SelectedIndex = 0
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        ' adds the amount sold to the appropriate total
+
+        ' declare accumulator array and variables
+        Static Dim intTotalSold(2) As Integer
+        Dim intNumSold As Integer
+        Integer.TryParse(txtSold.Text, intNumSold)
+
+        ' update array value
+        If lstCarType.SelectedIndex = 0 Then
+            intTotalSold(0) += intNumSold
+        Else
+            intTotalSold(1) += intNumSold
+        End If
+
+        ' display array values
+        lblNew.Text = intTotalSold(0).ToString
+        lblUsed.Text = intTotalSold(1).ToString
+
+        txtSold.Focus()
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub txtSold_Enter(sender As Object, e As EventArgs) Handles txtSold.Enter
+        txtSold.SelectAll()
+    End Sub
+
+    Private Sub txtSold_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSold.KeyPress
+        ' allow numbers and the Backspace
+
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub ClearLabels(sender As Object, e As EventArgs) Handles txtSold.TextChanged, lstCarType.SelectedIndexChanged
+        lblNew.Text = String.Empty
+        lblUsed.Text = String.Empty
+    End Sub
+End Class
+
+***Jenko Books***
+-----------------
+' Name:         Jenko Project
+' Purpose:      Display the total of the sales
+'               stored in a two-dimensional array
+' Programmer:   Branden Barber on March 12, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+        ' displays the total sales
+        Dim dblSales(,) As Double = {{1200.33, 2350.75},
+                                    {3677.8, 2456.05},
+                                    {750.67, 1345.99}}
+        ' total the sales amounts stored in the array
+        Dim dblTotal As Double
+        'Using a For Each Loop
+        For Each dblElement As Double In dblSales
+            dblTotal = dblTotal + dblElement
+        Next
+        'reset total to use the nested for loop
+        dblTotal = 0
+        'using a nested for loop
+        Dim intHighRow As Integer = dblSales.GetUpperBound(0)
+        Dim intHighCol As Integer = dblSales.GetUpperBound(1)
+        For intR As Integer = 0 To intHighRow
+            For intC As Integer = 0 To intHighCol
+                dblTotal += dblSales(intR, intC)
+            Next intC
+        Next intR
+
+        lblTotal.Text = dblTotal.ToString("C2")
+
+    End Sub
+End Class
+
+***Game Show***
+---------------
+' Name:         Game Show Project
+' Purpose:      Write names to and read names 
+'               from a sequential access file
+' Programmer:   Branden Barber on March 14, 2019
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnWrite_Click(sender As Object, e As EventArgs) Handles btnWrite.Click
+        ' writes a name to a sequential access file
+
+        ' declare a StreamWriter variable
+        Dim outFile As IO.StreamWriter
+        ' open the file for append
+        outFile = IO.File.AppendText("contestants.txt")
+        ' write the name on a separate line in the file
+        outFile.WriteLine(txtName.Text)
+        ' close the file
+        outFile.Close()
+        ' clear the list box and then set the focus
+        lstContestants.Items.Clear()
+        txtName.Focus()
+    End Sub
+
+    Private Sub btnRead_Click(sender As Object, e As EventArgs) Handles btnRead.Click
+        ' reads names from a sequential access file 
+        ' and displays them in the interface
+
+        ' declare variables
+        Dim inFile As IO.StreamReader
+        Dim strName As String
+        ' clear previous names from the list box
+        lstContestants.Items.Clear()
+
+        ' determine whether the file exists
+        If IO.File.Exists("contestants.txt") Then
+            'open the file for input
+            inFile = IO.File.OpenText("contestants.txt")
+            'process loop instructions till end of file
+            Do Until inFile.Peek = -1
+                lstContestants.Items.Add(inFile.ReadLine)
+            Loop
+            inFile.Close()
+        Else
+            MessageBox.Show("Can't find the file", "Game Show Contestants", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
+
+    Private Sub txtName_Enter(sender As Object, e As EventArgs) Handles txtName.Enter
+        txtName.SelectAll()
+    End Sub
+End Class

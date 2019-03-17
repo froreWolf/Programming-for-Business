@@ -1,0 +1,673 @@
+***CH 3You Do It 1***
+---------------------
+Public Class Form1
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'this button will take the value in the textbox and display it in the label
+        Dim dblCost As Double 'can be Dim, static, or private
+        Double.TryParse(TextBox1.Text, dblCost) 'parse into a double
+
+        dblCost *= 10 'will multiply by 10
+
+        'Label1.Text = Convert.ToString(dblCost) 'both are valid
+        Label1.Text = "Cost: " + dblCost.ToString("c2") 'use this one though
+    End Sub
+
+End Class
+
+
+***CH 3You Do It 2***
+---------------------
+Public Class Form1
+
+    'Private intNumber As Integer 'This method of keeping the variable will hold true for *ALL* procedures
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnCounter.Click
+
+        Static intNumber As Integer 'This method of keeping the variable will hold true only for *THIS* procedure
+        intNumber += 1
+        lblCurrentCount.Text = Convert.ToString(intNumber)
+
+    End Sub
+
+End Class
+
+***CH 3You Do It 3***
+---------------------
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class Form1
+
+    Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
+        Dim dblNum As Double
+        'dblNum = txtInput.Text 'This is fine only if correct input is entered
+        Double.TryParse(txtInput.Text, dblNum)
+        'lblDisplay.Text = dblNum 'you like crashing?
+        lblDisplay.Text = dblNum.ToString("P0")
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+End Class
+
+***CH 4 You Do It 1***
+----------------------
+Public Class Form1
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim dblNum As Double
+        Double.TryParse(txtInput.Text, dblNum)
+
+        If dblNum > 1 Then
+            lblDisplay.Text = "The number is over 1."
+        Else
+            lblDisplay.Text = "The number is not over 1."
+        End If
+    End Sub
+End Class
+
+
+***CH 4 You Do It 2***
+----------------------
+Public Class Form1
+    Private Sub btnCompare_Click(sender As Object, e As EventArgs) Handles btnCompare.Click
+        If 4 + 3 * 2 > 2 * 10 - 11 Then
+            lblExpression1.Text = "4 + 3 * 2 > 2 * 10 - 11" & ControlChars.NewLine &
+                "=" & (4 + 3 * 2) & " > " & (2 * 10 - 11) & " Is True"
+        Else
+            lblExpression1.Text = "4 + 3 * 2 > 2 * 10 - 11" & ControlChars.NewLine &
+                "=" & (4 + 3 * 2) & " > " & (2 * 10 - 11) & "Is False"
+        End If
+        'statement 2
+        If 4 + 3 * 2 > 2 * 10 - 11 Then
+            lblExpression2.Text = "8 + 3 - 6 + 85 < 5 * 26" & ControlChars.NewLine &
+                "=" & (8 + 3 - 6 + 85) & " < " & (5 * 26) & " Is True"
+        Else
+            lblExpression2.Text = "8 + 3 - 6 + 85 < 5 * 26" & ControlChars.NewLine &
+                "=" & (8 + 3 - 6 + 85) & " < " & (5 * 26) & " Is False"
+        End If
+        'statement 3
+        If 4 + 3 * 2 > 2 * 10 - 11 Then
+            lblExpression3.Text = "10 / 5 + 3 - 6 * 2 > 0" & ControlChars.NewLine &
+                "=" & (10 / 5 + 3 - 6 * 2) & " > " & (0) & " Is True"
+        Else
+            lblExpression3.Text = "10 / 5 + 3 - 6 * 2 > 0" & ControlChars.NewLine &
+                "=" & (10 / 5 + 3 - 6 * 2) & " > " & (0) & " Is False"
+        End If
+        'statement 4
+        If 4 + 3 * 2 > 2 * 10 - 11 Then
+            lblExpression4.Text = "72 / 25 + 2 * 5 * 6 <= 8 * 8" & ControlChars.NewLine &
+                "=" & (72 / 25 + 2 * 5 * 6) & " <= " & (8 * 8) & " Is True"
+        Else
+            lblExpression4.Text = "72 / 25 + 2 * 5 * 6 <= 8 * 8" & ControlChars.NewLine &
+                "=" & (72 / 25 + 2 * 5 * 6) & " <= " & (8 * 8) & " Is False"
+        End If
+    End Sub
+End Class
+
+***CH 4 You Do It 3***
+----------------------
+Public Class Form1
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+
+        Dim intInput As Integer
+        Integer.TryParse(txtInput.Text, intInput)
+        If intInput = 1 Then
+            lblResult.Text = "20 + 5 = " & (20 + 5).ToString
+        Else
+            lblResult.Text = "20 - 5 = " & (20 - 5).ToString
+        End If
+    End Sub
+End Class
+
+***CH 4 You Do It 3***
+----------------------
+Option Explicit On
+Option Strict On
+Option Infer On
+
+Public Class Form1
+    Private Sub btnDivide_Click(sender As Object, e As EventArgs) Handles btnDivide.Click
+        'create variables and get data from user
+        Dim dblNum1 As Double, dblNum2 As Double
+        Dim strResult As String
+        Double.TryParse(txtNum1.Text, dblNum1)
+        Double.TryParse(txtNum2.Text, dblNum2)
+
+        'if statements to ensure not /0
+        If dblNum2 <> 0 Then
+            strResult = (dblNum1 / dblNum2).ToString("n2")
+        Else
+            strResult = "Cannot divide by 0!"
+        End If
+
+        'put results into label
+        lblOutput.Text = "Output: " & strResult
+    End Sub
+End Class
+
+***CH 4 You Do It 5***
+----------------------
+Public Class Form1
+
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+
+        Dim dblInput As Double
+
+        Integer.TryParse(txtInput.Text, dblInput)
+
+        If dblInput < 0.0 OrElse dblInput > 100.0 Then
+            lblOutput.Text = "Output: Invalid Number"
+        Else
+            lblOutput.Text = "Output: Valid Number"
+        End If
+    End Sub
+End Class
+
+***CH 4 You Do It 6***
+----------------------
+Public Class Form1
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        If TextBox1.Text.ToUpper = "A" Then
+            Label1.Text = "Addition"
+        Else
+            Label1.Text = "Subtraction"
+        End If
+    End Sub
+End Class
+
+***CH 5 You Do It 1***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim dlgCouponButton As DialogResult
+        Dim dlgTwoDollarButton As DialogResult
+
+        dlgCouponButton = MessageBox.Show("Does the customer have a coupon?", "CD", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+
+        If dlgCouponButton = Windows.Forms.DialogResult.Yes Then
+            dlgTwoDollarButton = MessageBox.Show("Is it a $2 coupon?", "CD", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+            If dlgTwoDollarButton = Windows.Forms.DialogResult.Yes Then
+                Label1.Text = "$10"
+            Else
+                Label1.Text = "$8"
+            End If
+        Else
+            Label1.Text = "$12"
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim dlgCouponButton As DialogResult
+        Dim dlgTwoDollarButton As DialogResult
+
+        dlgCouponButton = MessageBox.Show("Does the customer have a coupon?", "CD", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+
+        If dlgCouponButton <> Windows.Forms.DialogResult.Yes Then
+            Label1.Text = "$12"
+        Else
+            dlgTwoDollarButton = MessageBox.Show("Is it a $2 coupon?", "CD", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+            If dlgTwoDollarButton = Windows.Forms.DialogResult.Yes Then
+                Label1.Text = "$10"
+            Else
+                Label1.Text = "$8"
+            End If
+        End If
+    End Sub
+End Class
+
+***CH5 You Do It 2***
+---------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim strCode As Integer = TextBox1.Text
+
+        If strCode = "1" Then
+            Label1.Text = "Ticket Price: $15"
+        ElseIf strCode = "2" Then
+            Label1.Text = "Ticket Price: $15"
+        ElseIf strCode = "3" Then
+            Label1.Text = "Ticket Price: $25"
+        ElseIf strCode = "4" Then
+            Label1.Text = "Ticket Price: $35"
+        ElseIf strCode = "5" Then
+            Label1.Text = "Ticket Price: $37"
+        Else
+            Label1.Text = "Invalid Code Dumbass"
+        End If
+
+    End Sub
+End Class
+
+***CH 5 You Do It 3***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim strCode As String = TextBox1.Text
+
+        Select Case strCode
+            Case "1"
+                Label1.Text = "Ticket Price: $15"
+            Case "2"
+                Label1.Text = "Ticket Price: $15"
+            Case "3"
+                Label1.Text = "Ticket Price: $25"
+            Case "4"
+                Label1.Text = "Ticket Price: $35"
+            Case "5"
+                Label1.Text = "Ticket Price: $37"
+            Case Else
+                Label1.Text = "Invalid Code"
+        End Select
+    End Sub
+End Class
+
+***CH 5 You Do It 4***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim blnCanConvert As Boolean
+        Dim intInput As Integer
+
+        blnCanConvert = Integer.TryParse(TextBox1.Text, intInput)
+
+        If (blnCanConvert = False) Then
+            Label1.Text = "Cannot Convert"
+        Else
+            Label1.Text = intInput.ToString()
+        End If
+    End Sub
+End Class
+
+***CH 5 You Do It 5***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim randGen As New Random
+        Label1.Text = randGen.Next(1, 11).ToString("n0")
+    End Sub
+End Class
+
+***CH 6 You Do It 2***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim intCond As Integer = 1
+        Do While intCond <= 7
+            MessageBox.Show(intCond.ToString, "Counting", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            intCond += 2
+        Loop
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim intCond As Integer = 1
+        Do
+            MessageBox.Show(intCond.ToString, "Counting", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            intCond += 2
+        Loop While intCond <= 7
+    End Sub
+End Class
+
+***CH 6 You Do It 4***
+----------------------
+Public Class Form1
+
+    Private intCount As Integer = 0
+    Private dblTotal As Double = 0
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim strNumber As String
+        Dim dblNumber As Double
+
+        Do
+            strNumber = InputBox("Please enter a price or leave blank to exit", "The Price is Right")
+
+            Double.TryParse(strNumber, dblNumber)
+
+            intCount += 1
+            dblTotal += dblNumber
+        Loop While strNumber <> String.Empty
+        If intCount <> 0 Then
+            Label1.Text = ("Count: " & intCount.ToString("N0"))
+            Label2.Text = ("Total: " & dblTotal.ToString("C2"))
+            Label3.Text = ("Average: " & (dblTotal / intCount).ToString("C2"))
+        Else
+            Label1.Text = "None"
+            Label2.Text = "None"
+            Label3.Text = "None"
+        End If
+    End Sub
+End Class
+
+***CH 6 You Do It 5***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim intSum As Integer = 0
+
+        For i As Integer = 14 To 23
+            Label1.Text = Label1.Text & i.ToString() & ControlChars.NewLine
+            intSum += i
+        Next
+
+        Label2.Text = "Sum: " & intSum
+    End Sub
+End Class
+
+***CH 7 You Do It 1***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim dblInput As Double
+        Double.TryParse(TextBox1.Text, dblInput)
+
+        ShowDouble(dblInput)
+        Label1.Text = Label1.Text & " " & dblInput.ToString
+    End Sub
+
+    Private Sub ShowDouble(ByVal dblNumber As Double)
+        Label1.Text = (dblNumber * 2).ToString
+    End Sub
+End Class
+
+***CH 7 You Do It 2***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim intNum As Integer
+        Dim intDoubleNum As Integer
+
+        Integer.TryParse(TextBox1.Text, intNum)
+        Call CalcDouble(intNum, intDoubleNum)
+        Label1.Text = intDoubleNum.ToString
+    End Sub
+
+    Private Sub CalcDouble(ByVal intNum As Integer, ByRef intNum2 As Integer)
+        intNum2 = intNum * 2
+    End Sub
+End Class
+
+***CH 7 You Do It 3***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim intNumber As Integer
+        Integer.TryParse(TextBox1.Text, intNumber)
+
+        Label1.Text = GetBonus(intNumber).toString
+    End Sub
+
+    Private Function GetBonus(ByVal intNumber As Integer) As Double
+        Return (intNumber * 0.1)
+    End Function
+End Class
+
+***CH 8 You Do It 1***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'get dat text yo
+        Dim strInput As String
+        strInput = TextBox1.Text
+        'trim dat text yo
+        strInput = strInput.Trim
+
+        If strInput.Length > 4 Then
+            'cut the string down to four characters
+            strInput = strInput.Remove(4)
+        End If
+
+        'display the string
+        Label1.Text = strInput
+
+    End Sub
+End Class
+
+***CH 8 You Do It 2***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim strinput As String = TextBox1.Text
+
+        strinput = strinput.Trim
+
+        If strinput.Length > 3 Then
+            strinput = strinput.Insert(1, "#")
+        End If
+
+        strinput = strinput.PadRight(10, "*"c)
+        Label1.Text = strinput
+    End Sub
+End Class
+
+***CH 8 You Do It 3***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Label1.Text = (TextBox1.Text.Contains("9")).ToString
+        Label2.Text = (TextBox1.Text.IndexOf("9")).ToString
+    End Sub
+End Class
+
+***CH 8 You Do It 4***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim strAlphabet As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        Label1.Text = strAlphabet.Substring(strAlphabet.IndexOf("K"), 5)
+    End Sub
+End Class
+
+***CH 8 You Do It 4 Modified***
+-------------------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim strAlphabet As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        Dim strCharacter As String = InputBox("Enter a letter", "Which Letter").ToUpper
+        Dim intIndex As Integer = strAlphabet.IndexOf(strCharacter), strChars As Integer = 5
+
+        While strAlphabet.Length < (intIndex + strChars)
+            strChars -= 1
+        End While
+
+        If intIndex <> -1 Then
+            Label1.Text = strAlphabet.Substring(intIndex, strChars)
+        Else
+            Label1.Text = "Character/String not found!"
+        End If
+
+    End Sub
+End Class
+
+***CH 8 You Do It 5***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        If TextBox1.Text Like "##*" Then
+            Label1.Text = "OK"
+        Else
+            Label1.Text = "Not OK..."
+        End If
+    End Sub
+End Class
+
+***CH 8 You Do It 1 Modified***
+-------------------------------
+Public Class Form1
+    Private Sub RunToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RunToolStripMenuItem.Click
+        'get dat text yo
+        Dim strInput As String
+        strInput = TextBox1.Text
+        'trim dat text yo
+        strInput = strInput.Trim
+
+        If strInput.Length > 4 Then
+            'cut the string down to four characters
+            strInput = strInput.Remove(4)
+        End If
+
+        'display the string
+        Label1.Text = strInput
+
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+End Class
+
+***CH 9 You Do It 1***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim intNums() As Integer = {2, 4, 6, 8, 10, 12}
+        Label1.Text = intNums.Length.ToString()
+        Label2.Text = (intNums.GetUpperBound(0) + 1).ToString()
+    End Sub
+End Class
+
+***CH 9 You Do It 2***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim strNames() As String = {"Juan", "Brooj ", "Drib", "Evalyn", "Freya", "Raven", "Winter", "Rowan", "Khana"}
+
+        For Each i As String In strNames
+            MessageBox.Show(i, "Clueless Crusaders")
+        Next
+
+        Dim intCounter As Integer = 0
+        Do While intCounter < strNames.Length
+            MessageBox.Show(strNames(intCounter), "Clueless Crusaders")
+            intCounter += 1
+        Loop
+
+        For i As Integer = 0 To strNames.GetUpperBound(0)
+            MessageBox.Show(strNames(i), "Clueless Crusaders")
+        Next
+
+    End Sub
+End Class
+
+***Ch 9 You Do It 3***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim intNums() As Integer = {1, 2, 3, 4, 5}, intCounter As Integer = 0, intTotal As Integer = 0
+
+        Do While intCounter < intNums.Length
+            intTotal += intNums(intCounter)
+            intCounter += 1
+        Loop
+
+        Label1.Text = intTotal.ToString
+        intTotal = 0
+
+        For Each num As Integer In intNums
+            intTotal += num
+        Next
+
+        Label2.Text = intTotal.ToString
+        intTotal = 0
+
+        For i As Integer = 0 To intNums.Length - 1
+            intTotal += intNums(i)
+        Next
+
+        Label3.Text = intTotal.ToString
+
+    End Sub
+End Class
+
+***Ch 9 You Do It 4***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim dblNums() As Double = {123.14, 110, 174.22, 101.01, 561.1231532, 101.01}
+        Dim dblLowest As Double = dblNums(0)
+
+        For i As Integer = 1 To dblNums.GetUpperBound(0)
+            If dblNums(i) < dblLowest Then
+                dblLowest = dblNums(i)
+            End If
+        Next
+
+        Label1.Text = dblLowest.ToString
+    End Sub
+End Class
+
+***Ch 9 You Do It 5***
+----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim intNums() As Integer = {6208, 9420, 1062, 6969, 4413, 9345, 1752, 8723, 6723, 7323, 1187, 1235, 7632, 14551, 12312}
+        Dim intHighSub As Integer = intNums.getUpperBound(0), intSub As Integer
+
+        For Each nums As Integer In intNums
+            ListBox1.Items.Add(nums)
+        Next
+
+        For intSub = 0 To intHighSub
+            intNums(intSub) += 5
+        Next
+
+        intSub = 0
+        Do While (intSub <= intHighSub)
+            ListBox2.Items.Add(intNums(intSub))
+            intSub += 1
+        Loop
+    End Sub
+
+
+End Class
+
+***Ch 10 You Do It 2***
+-----------------------
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim outFile As IO.StreamWriter
+        Dim strInput As String
+
+        outFile = IO.File.CreateText("numbers.txt")
+        strInput = InputBox("Enter a number. Click Cancel to end.", "Number")
+        Do Until strInput = String.Empty
+            outFile.WriteLine(strInput)
+            strInput = InputBox("Enter a number. Click Cancel to end.", "Number")
+        Loop
+        outFile.Close()
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim inFile As IO.StreamReader
+        Dim dblTotal As Double = 0, dblInput As Double
+        inFile = IO.File.OpenText("numbers.txt")
+
+        If IO.File.Exists("numbers.txt") Then
+            Do While inFile.Peek <> -1
+                Double.TryParse(inFile.ReadLine, dblInput)
+                dblTotal += dblInput
+            Loop
+        Else
+            Label1.Text = "File does not exist"
+        End If
+
+        Label1.Text = dblTotal.ToString
+    End Sub
+End Class

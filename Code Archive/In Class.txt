@@ -1,0 +1,274 @@
+***Bakery Program***
+--------------------
+' Name:         Bakery Project
+' Purpose:      Calculates the total number of
+'               items sold and the total sales
+' Programmer:   Branden Barber on September 20, 2018
+
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+
+    'class level var for sales clerk's name
+    'Private strClerk As String
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'get the salesclerk's name
+        'strClerk = InputBox("Enter the salesclerks's name:", "Name Entry")
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+		
+		'get the clerk name
+		static strClerk As String
+        strClerk = InputBox("Enter the salesclerks's name:", "Name Entry", strClerk)
+
+        Const decItem_PRICE As Decimal = 0.5D
+        Const decTAX_RATE As Decimal = 0.02D
+        Dim intDonuts As Integer
+        Dim intMuffins As Integer
+        Dim intTotalItems As Integer
+        Dim decSubtotal As Decimal
+        Dim decSalesTax As Decimal
+        Dim decTotalSales As Decimal
+
+        'calculate # of items sold
+        Integer.TryParse(txtDonuts.Text, intDonuts)
+        Integer.TryParse(txtMuffins.Text, intMuffins)
+        intTotalItems = intDonuts + intMuffins
+
+        'get the subtotal, sales tax, and totalsales
+        decSubtotal = intTotalItems * decItem_PRICE
+        decSalesTax = decSubtotal * decTAX_RATE
+        decTotalSales = decSubtotal + decSalesTax
+
+        'display elements in boxes
+        lblTotalItems.Text = intTotalItems.ToString()
+        lblTotalSales.Text = decTotalSales.ToString("C2")
+
+        'display tax and salesclerk's name
+        lblMsg.Text = "The sales tax was: " & decSalesTax.ToString("C2") & "." &
+                        ControlChars.NewLine & "Your clerk was " & strClerk
+
+    End Sub
+
+    Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtDonuts.Clear()
+        txtMuffins.Clear()
+        lblTotalItems.Text = ""
+        lblTotalSales.Text = ""
+        lblMsg.Text = ""
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub ClearLabels(sender As Object, e As EventArgs) _
+        Handles txtDonuts.TextChanged, txtMuffins.TextChanged
+        'clear total items total sales and message
+        lblTotalItems.Text = ""
+        lblTotalSales.Text = ""
+        lblMsg.Text = ""
+    End Sub
+
+    Private Sub txtMuffins_TextChanged(sender As Object, e As EventArgs) Handles txtMuffins.TextChanged
+        lblTotalItems.Text = ""
+        lblTotalSales.Text = ""
+        lblMsg.Text = ""
+    End Sub
+End Class
+
+***Parking***
+-------------
+Public Class frmMain
+    Private Sub RadioButtonChanged(sender As Object, e As EventArgs) Handles radRed.CheckedChanged,
+        radBlue.CheckedChanged, radGreen.CheckedChanged, chkCarWash.CheckedChanged
+        Dim strLot As String = ""
+        Dim dblPrice As Double
+        Dim strCarWash As String
+        '
+        If chkCarWash.Checked Then
+            strCarWash = "Car Wash"
+        Else
+            strCarWash = "No Car Wash"
+        End If
+        'get the parking lot they are in
+        Select Case True
+            Case radRed.Checked
+                strLot = "Red Lot"
+                dblPrice = 3
+            Case radGreen.Checked
+                strLot = "Green Lot"
+                dblPrice = 6
+            Case radBlue.Checked
+                strLot = "Blue Lot"
+                dblPrice = 10
+        End Select
+
+        lblOutput.Text = strLot & ControlChars.NewLine & dblPrice.ToString("C2") &
+            ControlChars.NewLine & strCarWash
+
+    End Sub
+End Class
+
+***For Next***
+--------------
+Option Explicit Off
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+    Private Sub btnDefault_Click(sender As Object, e As EventArgs) Handles btnDefault.Click
+
+        txtNums.Clear()
+
+        For i As Integer = 1 To 5
+            txtNums.Text += "Hi" & ControlChars.NewLine
+        Next i
+    End Sub
+
+End Class
+
+***Counting with for loop***
+----------------------------
+Public Class frmMain
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+
+        Dim intNumOfIntegers As Integer = 0
+        Dim intSumOfIntegers As Integer = 0
+        Dim intStart As Integer, intStop As Integer, intStep As Integer
+
+        Integer.TryParse(txtStart.Text, intStart)
+        Integer.TryParse(txtStop.Text, intStop)
+        Integer.TryParse(txtStep.Text, intStep)
+
+        txtBalance.Text = ""
+
+        If intStep = 0 Then
+            intStep += 1
+        End If
+
+        If intStart > intStop AndAlso intStep > 0 Then
+            intStep *= -1
+        ElseIf intStart < intStop AndAlso intStep < 0 Then
+            intStep *= -1
+        End If
+
+        For intYear As Integer = intStart To intStop Step intStep
+            intNumOfIntegers += 1
+            intSumOfIntegers += intYear
+
+            txtBalance.Text = txtBalance.Text & intYear.ToString & ControlChars.NewLine
+        Next
+
+        lblNumOut.Text = intNumOfIntegers.ToString()
+        lblSumOut.Text = intSumOfIntegers.ToString()
+
+    End Sub
+
+    Private Sub blockChars(sender As Object, e As KeyPressEventArgs) Handles txtStart.KeyPress, txtStop.KeyPress, txtStep.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "-" Then
+            e.Handled = True
+        End If
+
+    End Sub
+
+    Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
+
+        txtBalance.Text = ""
+        For i As Integer = 1 To 10 Step 1
+            txtBalance.Text = txtBalance.Text & i & ControlChars.NewLine
+        Next
+    End Sub
+End Class
+
+***Monthly Payment***
+---------------------
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+
+        Dim dblPrinciple As Double, dblRate As Double, dblPayment As Double
+
+        Double.TryParse(lstRates.SelectedItem.ToString, dblRate)
+        Double.TryParse(txtPrinciple.Text, dblPrinciple)
+
+        txtMonthlyPayment.Text = ""
+
+        For intYears As Integer = 15 To 30 Step 5
+            dblPayment = Financial.Pmt(dblRate / 100 / 12, intYears * 12, dblPrinciple)
+            txtMonthlyPayment.Text = txtMonthlyPayment.Text & intYears.ToString("N") & " years: " & dblPayment.ToString("C2") & ControlChars.NewLine
+        Next
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        For dblRates As Double = 2D To 7D Step 0.5D
+            lstRates.Items.Add(dblRates.ToString("N1"))
+        Next
+
+        lstRates.SelectedIndex = 0
+    End Sub
+
+    Private Sub lstRates_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstRates.SelectedIndexChanged
+        txtMonthlyPayment.Text = ""
+    End Sub
+
+    Private Sub txtPrinciple_TextChanged(sender As Object, e As EventArgs) Handles txtPrinciple.TextChanged
+        txtMonthlyPayment.Text = ""
+    End Sub
+End Class
+
+***Practice Jan 24***
+---------------------
+Public Class Form1
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'ComboBox1
+        ComboBox1.Items.Add("Henry")
+        ComboBox1.Items.Add("Gerald")
+        ComboBox1.Items.Add("Maxwell")
+        ComboBox1.SelectedIndex = 0
+        'ComboBox2
+        ComboBox2.Items.Add("Jenny")
+        ComboBox2.Items.Add("Rachel")
+        ComboBox2.Items.Add("Craig")
+        ComboBox2.SelectedIndex = 0
+
+        'ComboBox3
+        ComboBox3.Items.Add("Stanley")
+        ComboBox3.Items.Add("Henrietta")
+        ComboBox3.Items.Add("Erwin")
+        ComboBox3.SelectedIndex = 0
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+
+        Dim dlgButton As DialogResult
+        dlgButton = MessageBox.Show("Do you want to exit?", "Exit?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+
+        If dlgButton = Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        End If
+
+    End Sub
+End Class

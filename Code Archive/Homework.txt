@@ -1,0 +1,925 @@
+***Instrument Showcase***
+-------------------------
+Public Class formMain
+    Private Sub btnTrumpet_Click(sender As Object, e As EventArgs) Handles btnTrumpet.Click
+        picTrumpet.Visible = True
+        picFHorn.Visible = False
+        picTrombone.Visible = False
+        picEuph.Visible = False
+        picTuba.Visible = False
+        lblCurrentInstrument.Text = "Trumpet"
+
+    End Sub
+
+    Private Sub btnFHorn_Click(sender As Object, e As EventArgs) Handles btnFHorn.Click
+        picTrumpet.Visible = False
+        picFHorn.Visible = True
+        picTrombone.Visible = False
+        picEuph.Visible = False
+        picTuba.Visible = False
+        lblCurrentInstrument.Text = "French Horn"
+    End Sub
+
+    Private Sub btnTrombone_Click(sender As Object, e As EventArgs) Handles btnTrombone.Click
+        picTrumpet.Visible = False
+        picFHorn.Visible = False
+        picTrombone.Visible = True
+        picEuph.Visible = False
+        picTuba.Visible = False
+        lblCurrentInstrument.Text = "Trombone"
+    End Sub
+
+    Private Sub btnEuph_Click(sender As Object, e As EventArgs) Handles btnEuph.Click
+        picTrumpet.Visible = False
+        picFHorn.Visible = False
+        picTrombone.Visible = False
+        picEuph.Visible = True
+        picTuba.Visible = False
+        lblCurrentInstrument.Text = "Euphonium"
+    End Sub
+
+    Private Sub btnTuba_Click(sender As Object, e As EventArgs) Handles btnTuba.Click
+        picTrumpet.Visible = False
+        picFHorn.Visible = False
+        picTrombone.Visible = False
+        picEuph.Visible = False
+        picTuba.Visible = True
+        lblCurrentInstrument.Text = "Tuba"
+    End Sub
+End Class
+
+***Miles Per Gallon Calculator***
+---------------------------------
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class Form1
+
+    Private dblTotalMiles As Double = 0, dblTotalGallons As Double = 0, dblAverageMPG As Double = 0.0
+
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        'Create variable for gallons and miles and get their values
+        Dim dblMiles, dblGallons As Double
+        Double.TryParse(txtMiles.Text, dblMiles)
+        Double.TryParse(txtGallons.Text, dblGallons)
+        'Calculate MPG and put in in txtMPG
+        Dim dblMPG As Double
+        dblMPG = dblMiles / dblGallons
+        txtMPG.Text = dblMPG.ToString("F2")
+        'get the total/avg values if they are entered
+        Double.TryParse(txtTotalMiles.Text, dblTotalMiles)
+        Double.TryParse(txtTotalGallons.Text, dblTotalGallons)
+        'increment the total/avg values
+        dblTotalMiles += dblMiles
+        dblTotalGallons += dblGallons
+        dblAverageMPG = dblTotalMiles / dblTotalGallons
+        'put the total/avg values into their textboxes
+        txtTotalMiles.Text = dblTotalMiles.ToString("F2")
+        txtTotalGallons.Text = dblTotalGallons.ToString("F2")
+        txtAverageMPG.Text = dblAverageMPG.ToString("F2")
+    End Sub
+
+    Private Sub btnClearCurrent_Click(sender As Object, e As EventArgs) Handles btnClearCurrent.Click
+        txtMiles.Text = ""
+        txtGallons.Text = ""
+        txtMPG.Text = ""
+    End Sub
+
+    Private Sub btnClearAll_Click(sender As Object, e As EventArgs) Handles btnClearAll.Click
+        txtMiles.Text = ""
+        txtGallons.Text = ""
+        txtMPG.Text = ""
+        txtTotalMiles.Text = ""
+        txtTotalGallons.Text = ""
+        txtAverageMPG.Text = ""
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+End Class
+
+***Change Calculator***
+-----------------------
+Public Class Form1
+    Private Sub ClearLabels(sender As Object, e As EventArgs) _
+        Handles txtOwed.TextChanged, txtPaid.TextChanged
+        'clear textboxes that hold the change amounts
+        txtChange.Text = ""
+        txtDollars.Text = ""
+        txtQuarters.Text = ""
+        txtDimes.Text = ""
+        txtNickles.Text = ""
+        txtPennies.Text = ""
+
+    End Sub
+
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        'declare variables
+        Dim dblOwed As Double
+        Dim dblPaid As Double
+        Dim dblChange As Double
+        Dim intDollars As Integer
+        Dim intQuarters As Integer
+        Dim intDimes As Integer
+        Dim intNickles As Integer
+        Dim intPennies As Integer
+        'get input and calculate change owed
+        Double.TryParse(txtOwed.Text, dblOwed)
+        Double.TryParse(txtPaid.Text, dblPaid)
+        dblChange = dblPaid - dblOwed
+        txtChange.Text = dblChange.ToString("C2")
+        'get the individual change amounts
+        intPennies = dblChange * 100
+        intDollars = intPennies \ 100
+        intPennies -= (intDollars * 100)
+        intQuarters = intPennies \ 25
+        intPennies -= (intQuarters * 25) 'subtract the quarters
+        intDimes = intPennies \ 10
+        intPennies -= (intDimes * 10) 'subtract the dimes
+        intNickles = intPennies \ 5
+        intPennies = intPennies - (intNickles * 5)
+        'display the individual change amounts
+        txtDollars.Text = intDollars.ToString()
+        txtQuarters.Text = intQuarters.ToString()
+        txtDimes.Text = intDimes.ToString()
+        txtNickles.Text = intNickles.ToString()
+        txtPennies.Text = intPennies.ToString()
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        'clear everything
+        txtOwed.Text = ""
+        txtPaid.Text = ""
+        txtChange.Text = ""
+        txtDollars.Text = ""
+        txtQuarters.Text = ""
+        txtDimes.Text = ""
+        txtNickles.Text = ""
+        txtPennies.Text = ""
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+End Class
+
+***Add Or Subtract Numbers***
+-----------------------------
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class Form1
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+
+        Dim intInput As Integer
+        Integer.TryParse(txtInput.Text, intInput)
+        'var declarations for number
+        Dim intNum1 As Integer
+        Dim intNum2 As Integer
+        Dim strNum1 As Integer 'inputbox uses strings
+        Dim strNum2 As Integer
+
+        'inputboxesssssssss
+        Integer.TryParse(InputBox("Please enter the first Number", "Number 1"), intNum1)
+        Integer.TryParse(InputBox("Please enter the second Number", "Number 2"), intNum2)
+
+        'ensure the result is positive
+        If intNum1 < intNum2 Then
+            Dim temp As Integer
+            temp = intNum1
+            intNum1 = intNum2
+            intNum2 = temp
+        End If
+
+        'the actually maths
+        If intInput = 1 Then
+            lblResult.Text = "Results: " & intNum1.ToString & " + " &
+                intNum2.ToString & " = " & (intNum1 + intNum2).ToString
+        Else
+            lblResult.Text = "Results: " & intNum1.ToString & " - " &
+                intNum2.ToString & " = " & (intNum1 - intNum2).ToString
+        End If
+    End Sub
+End Class
+
+***Marcy's***
+-------------
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+    Private Sub btnTotal_Click(sender As Object, e As EventArgs) Handles btnTotal.Click
+        Dim dblNum1 As Double, dblNum2 As Double, dblAmountSaved As Double
+        Dim strAmountSaved As String
+
+        Double.TryParse(txtItem1.Text, dblNum1)
+        Double.TryParse(txtItem2.Text, dblNum2)
+
+        If dblNum1 > dblNum2 Then
+            dblNum2 /= 2 'set the price of the second (smaller number) to half it's current value
+            dblAmountSaved = dblNum2
+        Else
+            dblNum1 /= 2 'set the price of the first (smaller number) to half it's current value
+            dblAmountSaved = dblNum1
+        End If
+
+        strAmountSaved = dblAmountSaved.ToString("C2")
+
+        lblTotalOwed.Text = "Total: " & (dblNum1 + dblNum2).ToString("C2")
+        lblTotalOwed.Visible = True
+
+        MessageBox.Show(("You have saved " & strAmountSaved & " today."), "Savings", 0, MessageBoxIcon.Information)
+
+    End Sub
+
+    Private Sub InputGuard(sender As Object, e As KeyPressEventArgs) Handles txtItem1.KeyPress, txtItem2.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub clearTotal(sender As Object, e As EventArgs) Handles txtItem1.TextChanged, txtItem2.TextChanged
+        lblTotalOwed.Text = "Total:"
+        lblTotalOwed.Visible = False
+    End Sub
+
+    Private Sub txtItem1_Enter(sender As Object, e As EventArgs) Handles txtItem1.Enter
+        txtItem1.SelectAll()
+    End Sub
+
+    Private Sub txtItem2_Enter(sender As Object, e As EventArgs) Handles txtItem2.Enter
+        txtItem2.SelectAll()
+    End Sub
+End Class
+
+***Allenton Water Department***
+-------------------------------
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        'set the four variables
+        Dim dblPrevGallons As Double, dblCurGallons As Double, dblGallonsUsed As Double, dblTotalCharge As Double
+        'get input from the text boxes
+        Double.TryParse(txtCurIn.Text, dblCurGallons)
+        Double.TryParse(txtPrevIn.Text, dblPrevGallons)
+        'calculate gallons used
+        dblGallonsUsed = dblCurGallons - dblPrevGallons
+        'get total charge
+        dblTotalCharge = ((dblGallonsUsed / 1000) * 1.75) + 16.67
+        'display results
+        lblGallonsOutput.Text = dblGallonsUsed.ToString()
+        lblTotalOutput.Text = dblTotalCharge.ToString("C2")
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub clearOnChange(sender As Object, e As EventArgs) Handles txtCurIn.TextChanged, txtPrevIn.TextChanged
+        lblGallonsOutput.Text = ""
+        lblTotalOutput.Text = ""
+    End Sub
+
+    Private Sub input_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCurIn.KeyPress, txtPrevIn.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtCurIn_GotFocus(sender As Object, e As EventArgs) Handles txtCurIn.GotFocus
+        txtCurIn.SelectAll()
+    End Sub
+
+    Private Sub txtPrevIn_GotFocus(sender As Object, e As EventArgs) Handles txtPrevIn.GotFocus
+        txtPrevIn.SelectAll()
+    End Sub
+
+    Private Sub txtCurIn_Enter(sender As Object, e As EventArgs) Handles txtCurIn.Enter
+
+    End Sub
+End Class
+
+***Marcy Solution***
+--------------------
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+    Private Sub btnTotal_Click(sender As Object, e As EventArgs) Handles btnTotal.Click
+        Dim dblNum1 As Double, dblNum2 As Double, dblAmountSaved As Double
+        Dim strAmountSaved As String
+
+        Double.TryParse(txtItem1.Text, dblNum1)
+        Double.TryParse(txtItem2.Text, dblNum2)
+
+        If dblNum1 > dblNum2 Then
+            dblNum2 /= 2 'set the price of the second (smaller number) to half it's current value
+            dblAmountSaved = dblNum2
+        Else
+            dblNum1 /= 2 'set the price of the first (smaller number) to half it's current value
+            dblAmountSaved = dblNum1
+        End If
+
+        strAmountSaved = dblAmountSaved.ToString("C2")
+
+        lblTotalOwed.Text = "Total: " & (dblNum1 + dblNum2).ToString("C2")
+        lblTotalOwed.Visible = True
+
+        MessageBox.Show(("You have saved " & strAmountSaved & " today."), "Savings", 0, MessageBoxIcon.Information)
+
+    End Sub
+
+    Private Sub InputGuard(sender As Object, e As KeyPressEventArgs) Handles txtItem1.KeyPress, txtItem2.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub clearTotal(sender As Object, e As EventArgs) Handles txtItem1.TextChanged, txtItem2.TextChanged
+        lblTotalOwed.Text = "Total:"
+        lblTotalOwed.Visible = False
+    End Sub
+
+    Private Sub txtItem1_Enter(sender As Object, e As EventArgs) Handles txtItem1.Enter
+        txtItem1.SelectAll()
+    End Sub
+
+    Private Sub txtItem2_Enter(sender As Object, e As EventArgs) Handles txtItem2.Enter
+        txtItem2.SelectAll()
+    End Sub
+End Class
+
+***Addition Practice***
+-----------------------
+Option Strict On
+Option Infer Off
+Option Explicit On
+
+Public Class frmMain
+
+
+    Private intNum1 As Integer, intNum2 As Integer, intCorrect As Integer = 0, intIncorrect As Integer = 0
+    Private boolAddition As Boolean
+
+    Private Sub CheckAnswer(sender As Object, e As EventArgs) Handles btnCheck.Click
+
+        Dim intInput As Integer
+        Integer.TryParse(txtInput.Text, intInput)
+
+        If boolAddition = True Then
+            If intNum1 + intNum2 = intInput Then
+                Correct()
+            Else
+                Incorrect()
+            End If
+        Else
+            If intNum1 - intNum2 = intInput Then
+                Correct()
+            Else
+                Incorrect()
+            End If
+        End If
+    End Sub
+
+    Private Sub Correct()
+        lblFace.Text = ":D"
+        lblFace.Visible = True
+        intCorrect += 1
+        lblCorrect.Text = intCorrect.ToString
+        GenerateNumbers()
+        txtInput.SelectAll()
+    End Sub
+
+    Private Sub Incorrect()
+        lblFace.Text = ":["
+        lblFace.Visible = True
+        intIncorrect += 1
+        lblIncorrect.Text = intIncorrect.ToString
+        GenerateNumbers()
+        txtInput.SelectAll()
+    End Sub
+
+    Private Sub ExitProgram(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub GradeSelect(sender As Object, e As EventArgs) Handles radLower.CheckedChanged, radUpper.CheckedChanged, radAdd.CheckedChanged, radSub.CheckedChanged
+        GenerateNumbers()
+    End Sub
+
+    Private Sub ShowSummary(sender As Object, e As EventArgs) Handles chkSummary.CheckedChanged
+        If chkSummary.Checked = True Then
+            grpSummary.Visible = True
+        Else
+            grpSummary.Visible = False
+        End If
+    End Sub
+
+    Private Sub GenerateNumbers()
+        Dim randGen As New Random
+
+        If radLower.Checked = True Then
+            intNum1 = randGen.Next(1, 11)
+            intNum2 = randGen.Next(1, 11)
+        Else
+            intNum1 = randGen.Next(10, 101)
+            intNum2 = randGen.Next(10, 101)
+        End If
+
+        If radAdd.Checked = True Then
+            boolAddition = True
+            lblOperator.Text = "+"
+        Else
+            boolAddition = False
+            lblOperator.Text = "-"
+            Swap()
+        End If
+
+        lblOper1.Text = intNum1.ToString
+        lblOper2.Text = intNum2.ToString
+
+    End Sub
+
+    Private Sub Swap()
+        If intNum1 < intNum2 Then
+            Dim temp As Integer
+            temp = intNum1
+            intNum1 = intNum2
+            intNum2 = temp
+        End If
+    End Sub
+
+    Private Sub txtInput_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtInput.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." Then
+            e.Handled = True
+        End If
+    End Sub
+End Class
+
+***Moonbucks***
+---------------
+Public Class frmMain
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Const dblSalesTax = 0.05
+
+        If radSmall.Checked = True AndAlso chkDecaf.Checked = False Then
+            lblOutput.Text = "Small Coffee" & ControlChars.NewLine & (2.95 + (2.95 * dblSalesTax)).ToString("N2") & ControlChars.NewLine & "caffeinated"
+        ElseIf radMedium.Checked = True AndAlso chkDecaf.Checked = False Then
+            lblOutput.Text = "Small Coffee" & ControlChars.NewLine & (3.5 + (3.5 * dblSalesTax)).ToString("N2") & ControlChars.NewLine & "caffeinated"
+        ElseIf radLarge.Checked = True AndAlso chkDecaf.Checked = False Then
+            lblOutput.Text = "Small Coffee" & ControlChars.NewLine & (4.05 + (4.05 * dblSalesTax)).ToString("N2") & ControlChars.NewLine & "caffeinated"
+        ElseIf radSmall.Checked = True AndAlso chkDecaf.Checked = True Then
+            lblOutput.Text = "Small Coffee" & ControlChars.NewLine & (2.95 + (2.95 * dblSalesTax)).ToString("N2") & ControlChars.NewLine & "decaffeinated"
+        ElseIf radMedium.Checked = True AndAlso chkDecaf.Checked = True Then
+            lblOutput.Text = "Small Coffee" & ControlChars.NewLine & (3.5 + (3.5 * dblSalesTax)).ToString("N2") & ControlChars.NewLine & "decaffeinated"
+        ElseIf radLarge.Checked = True AndAlso chkDecaf.Checked = True Then
+            lblOutput.Text = "Small Coffee" & ControlChars.NewLine & (4.05 + (4.05 * dblSalesTax)).ToString("N2") & ControlChars.NewLine & "decaffeinated"
+        End If
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub RadioButtonChange(sender As Object, e As EventArgs) Handles radLarge.CheckedChanged, radMedium.CheckedChanged, radSmall.CheckedChanged, chkDecaf.CheckedChanged
+        lblOutput.Text = ""
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class
+
+***Koby Coffee***
+-----------------
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+
+    Private Const dblSalesTax As Double = 0.03
+    Private intOrderCounter As Integer = 0, dblTotal As Double
+
+    Private Sub btnStartOrder_Click(sender As Object, e As EventArgs) Handles btnStartOrder.Click
+
+        Dim dblInput As Double
+        dblTotal = 0
+
+        Do
+            dblInput = PriceEntry()
+            dblInput += dblInput * dblSalesTax
+            dblTotal += dblInput
+        Loop While dblInput <> 0
+        'put total in the label
+        lblOrderTotal.Text = dblTotal.ToString("C2")
+    End Sub
+
+    Private Sub btnNextOrder_Click(sender As Object, e As EventArgs) Handles btnNextOrder.Click
+
+        intOrderCounter += 1
+
+        txtOrderHistory.Text = txtOrderHistory.Text & intOrderCounter.ToString & ControlChars.Tab & dblTotal & ControlChars.NewLine
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Function PriceEntry() As Double
+        Dim dblInput As Double
+        Double.TryParse(InputBox("Please enter the price of the Item, or Enter 0 to exit price entry.", "Price Entry"), dblInput)
+        Return dblInput
+    End Function
+End Class
+
+***Sharon's Chocolates***
+-------------------------
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Const dblSalesTax As Double = 0.05
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+
+        Dim dblInput As Double, dblTotal As Double = 0
+
+        Do
+            Double.TryParse(InputBox("Enter the price of an item or enter 0 to exit price entry", "Price Entry"), dblInput)
+            dblTotal += dblInput
+        Loop While dblInput <> 0
+
+        dblTotal += dblTotal * dblSalesTax
+
+        lblOutput.Text = dblTotal.ToString("C2")
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+End Class
+
+***Grade Calculator***
+----------------------
+' Name:         Grade Calculator Project
+' Purpose:      Displays the total points earned and the grade for
+'               any number of students
+' Programmer:   Branden Barber on January 17
+
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnAssign_Click(sender As Object, e As EventArgs) Handles btnAssign.Click
+        Dim dblTotal As Double, dblScore As Double
+        Dim dlgResult As DialogResult
+
+        Do
+            dblTotal = 0
+            For intCounter As Integer = 1 To 3
+                Double.TryParse(InputBox("Please enter the score for test " & intCounter & "."), dblScore)
+                dblTotal += dblScore
+            Next
+            lblTotalPoints.Text = dblTotal.ToString("N2")
+            chooseGrade(dblTotal)
+            dlgResult = MessageBox.Show("Would you like to enter another score?", "Again?", MessageBoxButtons.YesNo)
+        Loop While (dlgResult = Windows.Forms.DialogResult.Yes)
+
+    End Sub
+
+    Private Sub chooseGrade(dblTotal As Double)
+
+        Select Case (dblTotal)
+            Case 0 To 179.99
+                lblGrade.Text = "F"
+            Case 180 To 209.99
+                lblGrade.Text = "D"
+            Case 210 To 239.99
+                lblGrade.Text = "C"
+            Case 240 To 269.99
+                lblGrade.Text = "B"
+            Case 270 To 300
+                lblGrade.Text = "A"
+        End Select
+
+    End Sub
+End Class
+
+***Sonheim Solution***
+----------------------
+Option Explicit On
+Option Infer Off
+Option Strict On
+
+Public Class frmMain
+    Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
+
+        Dim dblAssetCost As Double, intUsefulLife As Integer, dblSalvageValue As Double
+
+        Double.TryParse(txtAssetCost.Text, dblAssetCost)
+        Integer.TryParse(lstUsefulLife.SelectedItem.ToString, intUsefulLife)
+        Double.TryParse(txtSalvageValue.Text, dblSalvageValue)
+
+        txtSchedule.Text = "Year" & ControlChars.Tab & "Depreciation" & ControlChars.NewLine
+
+        For intCounter As Integer = 1 To intUsefulLife
+            txtSchedule.Text = txtSchedule.Text & intCounter & ControlChars.Tab &
+                Financial.DDB(dblAssetCost, dblSalvageValue, intUsefulLife, intCounter).ToString("C2") & ControlChars.NewLine
+        Next
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub ValidateInput(sender As Object, e As KeyPressEventArgs) Handles txtAssetCost.KeyPress, txtSalvageValue.KeyPress
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        For intCounter As Integer = 3 To 20
+            lstUsefulLife.Items.Add(intCounter)
+        Next
+    End Sub
+
+    Private Sub ClearForm(sender As Object, e As EventArgs) Handles txtAssetCost.TextChanged, txtSalvageValue.TextChanged, lstUsefulLife.SelectedIndexChanged
+        txtSchedule.Text = ""
+    End Sub
+End Class
+
+***Loan Calculator***
+---------------------
+Public Class frmMain
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+
+        Dim dblRate As Double, dblCurVal As Double, dblTerm As Double
+        Double.TryParse(txtRate.Text, dblRate)
+        Double.TryParse(txtCurrentVal.Text, dblCurVal)
+        Double.TryParse(txtTerm.Text, dblTerm)
+
+        lblResult.Text = getMonthlyPayment(dblRate, dblCurVal, dblTerm).ToString("C2")
+    End Sub
+
+    Private Function getMonthlyPayment(dblRate As Double, dblCurrentValue As Double, dblTerm As Double) As Double
+
+        Return ((dblRate / 12) * dblCurrentValue) / (1 - (1 + (dblRate / 12)) ^ -(dblTerm * 12))
+    End Function
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub ClearValue(sender As Object, e As EventArgs) Handles txtRate.TextChanged, txtTerm.TextChanged, txtCurrentVal.TextChanged
+        lblResult.Text = ""
+    End Sub
+
+    Private Sub inputValidation(sender As Object, e As KeyPressEventArgs) Handles txtRate.KeyPress, txtTerm.KeyPress, txtCurrentVal.KeyPress
+
+        If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back AndAlso e.KeyChar <> "." Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub frmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Dim dlgButton As DialogResult
+        dlgButton = MessageBox.Show("Do you want to exit?", "Exit?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+
+        If dlgButton = Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        End If
+    End Sub
+End Class
+
+***Pig Latin***
+---------------
+Public Class Form1
+    Private Sub btnTranslate_Click(sender As Object, e As EventArgs) Handles btnTranslate.Click
+        'get input and clean it
+        Dim strInput As String = txtInput.Text
+        strInput.Trim()
+        'check if the first letter is a vowel
+        If strInput Like "[aeiouAEIOU]*" Then
+            strInput = strInput & "-way"
+        ElseIf Not strInput.ToLower().Contains("a") AndAlso Not strInput.ToLower().Contains("e") AndAlso Not strInput.ToLower().Contains("i") AndAlso
+             Not strInput.ToLower().Contains("o") AndAlso Not strInput.ToLower().Contains("u") AndAlso Not strInput.ToLower().Contains("y") Then
+            strInput = strInput & "-way"
+        Else
+            'tranlate the word until the first letter is a vowel
+            While strInput Like "[!aeiouyAEIOUY]*"
+                strInput = strInput & strInput.Substring(0, 1).ToLower()
+                strInput = strInput.Remove(0, 1)
+            End While
+            'tack ay to the end of the word
+            strInput = strInput & "ay"
+        End If
+
+        lblOutput.Text = strInput
+
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub frmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Dim dlgResponse As DialogResult
+        dlgResponse = MessageBox.Show("Are you sure you want to exit?", "Pig Latin", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+        If dlgResponse = Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        End If
+    End Sub
+End Class
+
+***Palidrome Checker***
+-----------------------
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+    Private Sub btnCheck_Click(sender As Object, e As EventArgs) Handles btnCheck.Click
+        'get input and store in a variable
+        Dim strInput As String = txtInput.Text, strReverse As String = ""
+        strInput = strInput.Trim
+        'for loop to get the backwards version of the word
+        For i As Integer = strInput.Length - 1 To 0 Step -1
+            strReverse = strReverse & strInput.Substring(i, 1)
+        Next
+        'test if the input is a palindrome
+        If strInput Like strReverse Then
+            lblOutput.Text = "Palindrome: True"
+        Else
+            lblOutput.Text = "Palindrome: False"
+        End If
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+End Class
+
+***Huntington Motors***
+-----------------------
+Public Class frmMain
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        'static variables
+        Static intFull As Integer, intPart As Integer, intNew As Integer, intUsed As Integer
+        'get user input
+        Dim strID As String = txtID.Text
+        Dim intCarsSold As Integer
+        Integer.TryParse(txtNumberSold.Text, intCarsSold)
+        'add cars sold to totals
+        If strID Like "[12][FPfp]**" Then
+            'add the new/used sales
+            If strID.Substring(0, 1) Like "1" Then
+                intNew += intCarsSold
+            ElseIf strID.Substring(0, 1) Like "2" Then
+                intUsed += intCarsSold
+            End If
+            'add the full/part time sales
+            If strID.Substring(1, 1) Like "[Ff]" Then
+                intFull += intCarsSold
+            ElseIf strID.Substring(1, 1) Like "[Pp]" Then
+                intPart += intCarsSold
+            End If
+        End If
+
+        lblFullTime.Text = intFull.ToString
+        lblPartTime.Text = intPart.ToString
+        lblNewCar.Text = intNew.ToString
+        lblUsedCar.Text = intUsed.ToString
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub frmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Dim dlgButton As DialogResult
+        dlgButton = MessageBox.Show("Do you want to exit?", "Huntington Motors", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+
+        If dlgButton = Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        End If
+    End Sub
+End Class
+
+***Stock Market***
+------------------
+Option Explicit On
+Option Strict On
+Option Infer Off
+
+Public Class frmMain
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRun.Click
+        Dim intDaysIncreased As Integer, intDaysDecreased As Integer, intDaysSame As Integer
+        Dim dblAverage As Double, dblCurrent As Double, dblPrevious As Double
+        Dim dblPrices() As Double = {2.25, 2.4, 1.97, 1.97, 1.99, 1.97, 2.25, 2.87, 2.5, 2.4, 2.4, 2.4, 2.98, 2.12, 1.6,
+                                        1.57, 1.57, 1.59, 1.9, 2.23, 2.4, 2.62, 2.72, 2.61, 2.62, 2.52, 2.1, 2.01, 2, 1.9}
+
+
+        'start by getting the first array element and adding it to the total
+        dblPrevious = dblPrices(0)
+        dblAverage = dblPrevious
+
+        For i As Integer = 1 To dblPrices.GetUpperBound(0)
+            dblCurrent = dblPrices(i)
+            'decide which counting variable to increase
+            If dblCurrent > dblPrevious Then
+                intDaysIncreased += 1
+            ElseIf dblCurrent < dblPrevious Then
+                intDaysDecreased += 1
+            Else
+                intDaysSame += 1
+            End If
+            'calculate running average
+            dblAverage = (dblAverage + dblCurrent) / 2
+            'set the current variable to the previous to set up for next iteration
+            dblPrevious = dblCurrent
+        Next
+
+        lblIncrease.Text = intDaysIncreased.ToString
+        lblDecrease.Text = intDaysDecreased.ToString
+        lblSame.Text = intDaysSame.ToString
+        lblAverage.Text = dblAverage.ToString("C2")
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub frmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Dim dlgButton As DialogResult
+        dlgButton = MessageBox.Show("Do you want to exit?", "Stock Market", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+
+        If dlgButton = Windows.Forms.DialogResult.No Then
+            e.Cancel = True
+        End If
+    End Sub
+End Class
+
+***Seating Chart***
+-------------------
+Option Strict On
+Option Explicit On
+Option Infer Off
+
+Public Class Form1
+    Private Sub btnDisplayPrice_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDisplayPrice.Click
+        'create array, populate it then get upper bounds
+        Dim decPrices(,) As Double = {{450D, 450D, 450D, 450D},
+                                      {425D, 425D, 425D, 425D},
+                                      {400D, 400D, 400D, 400D},
+                                      {375D, 375D, 375D, 375D},
+                                      {375D, 375D, 375D, 375D},
+                                      {350D, 350D, 350D, 350D}}
+        Dim intMaxRow As Integer = decPrices.GetUpperBound(0)
+        Dim intMaxCol As Integer = decPrices.GetUpperBound(1)
+        'create variables for  row and column then assign input to them
+        Dim intRow As Integer, intCol As Integer
+        Integer.TryParse(txtRow.Text, intRow)
+        Integer.TryParse(txtCol.Text, intCol)
+        ' Make sure the row and col are within range, then display the seat price
+        If intRow > intMaxRow OrElse intRow < 0 Then
+            If intCol > intMaxCol OrElse intCol < 0 Then
+                lblPrice.Text = "Error: Both"
+            Else
+                lblPrice.Text = "Error: Row"
+            End If
+        ElseIf intCol > intMaxCol OrElse intCol < 0 Then
+            lblPrice.Text = "Error: Column"
+        Else
+            lblPrice.Text = decPrices(intRow, intCol).ToString("C2")
+        End If
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+End Class
