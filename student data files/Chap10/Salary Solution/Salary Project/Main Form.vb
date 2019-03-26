@@ -1,6 +1,6 @@
 ﻿' Name:         Salary Project
 ' Purpose:      Displays the salary amount associated with a code
-' Programmer:   <your name> on <current date>
+' Programmer:   Branden Barber on March 26, 2019    
 
 Option Explicit On
 Option Strict On
@@ -8,7 +8,21 @@ Option Infer Off
 
 Public Class frmMain
 
-    Private intSalaries() As Integer = {25000, 35000, 55000, 70000, 80200, 90500}
+    Private intSalaries() As Integer = getSalaries()
+
+    Private Function getSalaries() As Integer()
+
+        Dim fileIn As IO.StreamReader = IO.File.OpenText("salary.txt")
+        Dim intSalaries(5) As Integer
+        'loop to put salaries into the array
+        Dim i As Integer = 0
+        While fileIn.Peek <> -1
+            Integer.TryParse(fileIn.ReadLine, intSalaries(i))
+            i += 1
+        End While
+        'return value
+        Return intSalaries
+    End Function
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
