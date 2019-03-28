@@ -25,10 +25,10 @@ Public Class frmMain
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-
+        cboFriends.Items.Add(cboFriends.Text)
     End Sub
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-        cboFriends.Items.Remove(cboFriends.SelectedIndex)
+        cboFriends.Items.Remove(cboFriends.SelectedItem)
     End Sub
 End Class

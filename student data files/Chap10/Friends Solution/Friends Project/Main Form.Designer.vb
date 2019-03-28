@@ -73,13 +73,13 @@ Partial Class frmMain
         Me.Label1.Location = New System.Drawing.Point(17, 24)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 17)
+        Me.Label1.Size = New System.Drawing.Size(79, 28)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "&Friends:"
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 28.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(272, 252)
         Me.Controls.Add(Me.btnExit)
