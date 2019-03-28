@@ -9,6 +9,9 @@
         .auto-style1 {
             text-align: center;
         }
+        .auto-style2 {
+            font-size: large;
+        }
     </style>
 </head>
 <body>
@@ -21,6 +24,27 @@
             <asp:Image ID="Image1" runat="server" ImageUrl="~/Spoon.png" />
         </p>
         <br />
+        <span class="auto-style2">Teaspoons:&nbsp;&nbsp; </span>
+        <asp:TextBox ID="txtOriginalTeaSpoons" runat="server" CssClass="auto-style2" Font-Size="Large" Width="45px"></asp:TextBox>
+&nbsp;&nbsp;
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtOriginalTeaSpoons" ErrorMessage="Required Entry" ForeColor="Red"></asp:RequiredFieldValidator>
+        <br class="auto-style2" />
+        <span class="auto-style2">Multiply By:&nbsp; </span>
+        <asp:TextBox ID="txtMultiplyBy" runat="server" CssClass="auto-style2" Font-Size="Large" Width="45px"></asp:TextBox>
+&nbsp;&nbsp;
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtMultiplyBy" ErrorMessage="Required Entry" ForeColor="Red"></asp:RequiredFieldValidator>
+        <br class="auto-style2" />
+        <br class="auto-style2" />
+        <span class="auto-style2">Number of tablespoons:&nbsp; </span>
+        <asp:Label ID="lblTablespoons" runat="server" CssClass="auto-style2" Font-Size="Large"></asp:Label>
+        <br class="auto-style2" />
+        <br class="auto-style2" />
+        <span class="auto-style2">Number of Teaspoons:&nbsp;&nbsp;&nbsp; </span>
+        <asp:Label ID="lblTeaspoons" runat="server" CssClass="auto-style2" Font-Size="Large"></asp:Label>
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnSubmit" runat="server" style="font-size: medium" Text="Submit" />
         <br />
     
     </div>
