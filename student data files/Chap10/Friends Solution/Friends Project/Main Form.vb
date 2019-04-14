@@ -15,12 +15,26 @@ Public Class frmMain
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        If IO.File.Exists("Friends.txt") Then
+            Dim fileIn As IO.StreamReader = IO.File.OpenText("Friends.txt")
+
+            While fileIn.Peek <> -1
+                cboFriends.Items.Add(fileIn.ReadLine)
+            End While
+
+            fileIn.Close()
+        End If
     End Sub
 
     Private Sub frmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
 
-        Dim fileOut As IO.StreamWriter = IO.File.AppendText("Friends.txt")
+        Dim fileOut As IO.StreamWriter = IO.File.CreateText("Friends.txt")
 
+        For Each item As String In cboFriends.Items
+            fileOut.WriteLine(item)
+        Next
+
+        fileOut.Close()
 
     End Sub
 
