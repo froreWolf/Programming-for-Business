@@ -2,7 +2,7 @@
 ' Purpose:      Displays the records stored in a dataset
 '               Allows the user to add records to and 
 '               delete records from a dataset
-' Programmer:   <your name> on <current date>
+' Programmer:   Branden Barber on April 16, 2019
 
 Option Explicit On
 Option Strict On
@@ -18,8 +18,12 @@ Public Class frmMain
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         ' add a record to the dataset
+        Dim intYear As Integer
+        Dim intLength As Integer
+        Integer.TryParse(txtAddYear.Text, intYear)
+        Integer.TryParse(txtLength.Text, intLength)
 
-
+        MoviesDataSet.tblMovies.AddtblMoviesRow(intYear, txtTitle.Text, txtDirector.Text, intLength)
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
