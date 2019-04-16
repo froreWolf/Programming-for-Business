@@ -2,7 +2,7 @@
 ' Purpose:      Displays the records stored in a dataset
 '               Allows the user to add records to and 
 '               delete records from a dataset
-' Programmer:   <your name> on <current date>
+' Programmer:   Branden Barber on April 16 2019
 
 Option Explicit On
 Option Strict On
@@ -10,21 +10,52 @@ Option Infer Off
 
 Public Class frmMain
 
+    Private Sub frmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Try
+            TblMoviesTableAdapter.Update(MoviesDataSet.tblMovies)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Add Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
+    End Sub
+
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'MoviesDataSet.tblMovies' table. You can move, or remove it, as needed.
         Me.TblMoviesTableAdapter.Fill(Me.MoviesDataSet.tblMovies)
+        TblMoviesBindingSource.Sort = "YearWon"
 
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         ' add a record to the dataset
+        Dim intYear As Integer, intLength As Integer
+        Integer.TryParse(txtAddYear.Text, intYear)
+        Integer.TryParse(txtLength.Text, intLength)
 
-
+        Try
+            MoviesDataSet.tblMovies.AddtblMoviesRow(intYear, txtTitle.Text, txtDirector.Text, intLength)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Duplicate Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         ' delete a record from the dataset
+        Dim dlgButton As DialogResult
+        dlgButton = MessageBox.Show("Delete winner from year" & lstDeleteYear.Text & "?", "confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
 
+        If dlgButton = Windows.Forms.DialogResult.Yes Then
+            Dim row As DataRow
+            Dim intYear As Integer
+            Integer.TryParse(lstDeleteYear.Text, intYear)
+            row = MoviesDataSet.tblMovies.FindByYearWon(intYear)
+            row.Delete()
+        End If
+
+        Try
+            TblMoviesTableAdapter.Update(MoviesDataSet.tblMovies)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "delete Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
 
     End Sub
 

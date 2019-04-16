@@ -1,0 +1,11 @@
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\bin\Debug\Academy Award Project.exe.config
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\obj\Debug\Academy_Award_Project.frmMain.resources
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\obj\Debug\Academy_Award_Project.Resources.resources
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\obj\Debug\Academy Award Project.vbproj.GenerateResource.Cache
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\bin\Debug\Movies.accdb
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\bin\Debug\Academy Award Project.exe
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\bin\Debug\Academy Award Project.pdb
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\bin\Debug\Academy Award Project.xml
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\obj\Debug\Academy Award Project.exe
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\obj\Debug\Academy Award Project.xml
+C:\Users\bbarber4\Desktop\Chap14\Academy Award Solution\Academy Award Project\obj\Debug\Academy Award Project.pdb
