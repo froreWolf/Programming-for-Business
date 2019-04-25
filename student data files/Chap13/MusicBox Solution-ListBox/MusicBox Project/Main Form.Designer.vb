@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class frmMain
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lblSong = New System.Windows.Forms.Label()
         Me.lblSource = New System.Windows.Forms.Label()
         Me.lblShape = New System.Windows.Forms.Label()
@@ -31,11 +32,20 @@ Partial Class frmMain
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.lstId = New System.Windows.Forms.ListBox()
+        Me.MusicBoxDataSet = New MusicBox_Project.MusicBoxDataSet()
+        Me.MusicBoxDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblBoxBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblBoxTableAdapter = New MusicBox_Project.MusicBoxDataSetTableAdapters.tblBoxTableAdapter()
+        Me.TableAdapterManager = New MusicBox_Project.MusicBoxDataSetTableAdapters.TableAdapterManager()
+        CType(Me.MusicBoxDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MusicBoxDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TblBoxBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblSong
         '
         Me.lblSong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSong.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblBoxBindingSource, "Song", True))
         Me.lblSong.Location = New System.Drawing.Point(364, 65)
         Me.lblSong.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSong.Name = "lblSong"
@@ -46,6 +56,7 @@ Partial Class frmMain
         'lblSource
         '
         Me.lblSource.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSource.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblBoxBindingSource, "Source", True))
         Me.lblSource.Location = New System.Drawing.Point(256, 65)
         Me.lblSource.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSource.Name = "lblSource"
@@ -56,6 +67,7 @@ Partial Class frmMain
         'lblShape
         '
         Me.lblShape.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblShape.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblBoxBindingSource, "Shape", True))
         Me.lblShape.Location = New System.Drawing.Point(125, 65)
         Me.lblShape.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblShape.Name = "lblShape"
@@ -109,12 +121,40 @@ Partial Class frmMain
         '
         'lstId
         '
+        Me.lstId.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TblBoxBindingSource, "ID", True))
+        Me.lstId.DataSource = Me.TblBoxBindingSource
+        Me.lstId.DisplayMember = "ID"
         Me.lstId.FormattingEnabled = True
         Me.lstId.ItemHeight = 17
         Me.lstId.Location = New System.Drawing.Point(42, 65)
         Me.lstId.Name = "lstId"
         Me.lstId.Size = New System.Drawing.Size(41, 89)
         Me.lstId.TabIndex = 1
+        '
+        'MusicBoxDataSet
+        '
+        Me.MusicBoxDataSet.DataSetName = "MusicBoxDataSet"
+        Me.MusicBoxDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'MusicBoxDataSetBindingSource
+        '
+        Me.MusicBoxDataSetBindingSource.DataSource = Me.MusicBoxDataSet
+        Me.MusicBoxDataSetBindingSource.Position = 0
+        '
+        'TblBoxBindingSource
+        '
+        Me.TblBoxBindingSource.DataMember = "tblBox"
+        Me.TblBoxBindingSource.DataSource = Me.MusicBoxDataSet
+        '
+        'TblBoxTableAdapter
+        '
+        Me.TblBoxTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.tblBoxTableAdapter = Me.TblBoxTableAdapter
+        Me.TableAdapterManager.UpdateOrder = MusicBox_Project.MusicBoxDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'frmMain
         '
@@ -136,6 +176,9 @@ Partial Class frmMain
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Music Box"
+        CType(Me.MusicBoxDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MusicBoxDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TblBoxBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -149,5 +192,9 @@ Partial Class frmMain
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents lstId As System.Windows.Forms.ListBox
-
+    Friend WithEvents MusicBoxDataSetBindingSource As BindingSource
+    Friend WithEvents MusicBoxDataSet As MusicBoxDataSet
+    Friend WithEvents TblBoxBindingSource As BindingSource
+    Friend WithEvents TblBoxTableAdapter As MusicBoxDataSetTableAdapters.tblBoxTableAdapter
+    Friend WithEvents TableAdapterManager As MusicBoxDataSetTableAdapters.TableAdapterManager
 End Class

@@ -23,12 +23,15 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ProductsDataSet = New Sydney_Project.ProductsDataSet()
         Me.TblProductsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TblProductsTableAdapter = New Sydney_Project.ProductsDataSetTableAdapters.tblProductsTableAdapter()
         Me.TableAdapterManager = New Sydney_Project.ProductsDataSetTableAdapters.TableAdapterManager()
         Me.TblProductsDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtPrice = New System.Windows.Forms.TextBox()
         Me.txtName = New System.Windows.Forms.TextBox()
@@ -42,9 +45,6 @@ Partial Class frmMain
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.ProductsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblProductsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblProductsDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -89,6 +89,33 @@ Partial Class frmMain
         Me.TblProductsDataGridView.Size = New System.Drawing.Size(300, 289)
         Me.TblProductsDataGridView.StandardTab = True
         Me.TblProductsDataGridView.TabIndex = 0
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ItemNum"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ItemNum"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ItemName"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "ItemName"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.DataGridViewTextBoxColumn2.Width = 93
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Price"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle2.Format = "N2"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Price"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
         '
         'Panel1
         '
@@ -209,33 +236,6 @@ Partial Class frmMain
         Me.btnExit.TabIndex = 3
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = True
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ItemNum"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ItemNum"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ItemName"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "ItemName"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Width = 93
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Price"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle1.Format = "N2"
-        DataGridViewCellStyle1.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle1
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Price"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
         '
         'frmMain
         '

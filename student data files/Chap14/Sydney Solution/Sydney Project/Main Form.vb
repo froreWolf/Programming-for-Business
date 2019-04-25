@@ -1,7 +1,7 @@
 ﻿' Name:         Sydney Project
 ' Purpose:      Displays the records from a dataset
 '               Allows the user to add and delete records
-' Programmer:   <your name> on <current date>
+' Programmer:   Branden Barber on April 25, 2019
 
 Option Explicit On
 Option Strict On
@@ -38,5 +38,25 @@ Public Class frmMain
             e.KeyChar <> "." AndAlso e.KeyChar <> ControlChars.Back Then
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub BtnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        'get user input
+        Dim strNum As String, strName As String, intNumber As Integer
+        strNum = txtAddNumber.Text
+        strName = txtName.Text
+        Integer.TryParse(txtPrice.Text, intNumber)
+        'add a new record to the database (on page 827 of book)
+        Try
+            ProductsDataSet.tblProducts.AddtblProductsRow(strNum, strName, intNumber)
+        Catch ex As Exception
+            MessageBox.Show("Duplicate Record", "Sydney", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
+        'table does not stay updated!!!!!!
+    End Sub
+
+    Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        'ensure that the user wants to delete the record (pg 833 in the book)
+
     End Sub
 End Class
