@@ -1,11 +1,12 @@
-﻿' Name:         Sydney Project
+﻿Option Explicit On
+Option Strict On
+Option Infer Off
+' Name:         Sydney Project
 ' Purpose:      Displays the records from a dataset
 '               Allows the user to add and delete records
 ' Programmer:   Branden Barber on April 25, 2019
 
-Option Explicit On
-Option Strict On
-Option Infer Off
+Imports System.ComponentModel
 
 Public Class frmMain
 
@@ -57,6 +58,21 @@ Public Class frmMain
 
     Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         'ensure that the user wants to delete the record (pg 833 in the book)
+        Dim dlgButton As DialogResult
+        dlgButton = MessageBox.Show("Are you sure you want to delete" & lblDeleteNumber.Text & "?", "Sydney Project",
+                                    MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+        If dlgButton = Windows.Forms.DialogResult.Yes Then
+            Dim row As DataRow, strNumber As String = lblDeleteNumber.Text
+            row = ProductsDataSet.tblProducts.FindByItemNum(strNumber)
+            row.Delete()
+        End If
+    End Sub
 
+    Private Sub frmMain_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        Try
+            TblProductsTableAdapter.Update(ProductsDataSet.tblProducts)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Products", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
     End Sub
 End Class
