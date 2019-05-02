@@ -1,20 +1,25 @@
 ﻿Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'create and initialize variables
-        Dim intLon1 As Integer, intLon2 As Integer, intLat1 As Integer, intLat2 As Integer, intEarthRadMiles As Integer = 3959, intAnswer As Integer
-        Integer.TryParse(txtLon1.Text, intLon1)
-        Integer.TryParse(txtLon2.Text, intLon2)
-        Integer.TryParse(txtLat1.Text, intLat1)
-        Integer.TryParse(txtLat2.Text, intLat2)
+        Dim dblLon1 As Double, dblLon2 As Double, dblLat1 As Double, dblLat2 As Double
+        Dim intEarthRadMiles As Integer = 3959, dblAnswer As Double
+        Integer.TryParse(txtLon1.Text, dblLon1)
+        Integer.TryParse(txtLon2.Text, dblLon2)
+        Integer.TryParse(txtLat1.Text, dblLat1)
+        Integer.TryParse(txtLat2.Text, dblLat2)
+        dblLon1 = dblLon1 * Math.PI / 180
+        dblLon2 = dblLon2 * Math.PI / 180
+        dblLat1 = dblLat1 * Math.PI / 180
+        dblLat2 = dblLat2 * Math.PI / 180
         'calculate distance between the points
-        intAnswer = ((Math.Cos(intLon2 - intLon1)) * (Math.Cos(intLat1) * Math.Cos(intLat2))) + (Math.Sin(intLat1) + Math.Sin(intLat2))
-        'intAnswer = Math.Cos(intLon2 - intLon1)
-        'intAnswer *= Math.Cos(intLat1) * Math.Cos(intLat2)
-        'intAnswer += Math.Sin(intLat1) + Math.Sin(intLat2)
-        'radians = degrees*(pi/180Deg)
-        intAnswer = intEarthRadMiles * (Math.Acos(intAnswer) * (Math.PI / 180))
+        Try
+            dblAnswer = ((Math.Cos(dblLon2 - dblLon1)) * (Math.Cos(dblLat1) * Math.Cos(dblLat2))) + (Math.Sin(dblLat1) + Math.Sin(dblLat2))
+            dblAnswer = intEarthRadMiles * Math.Acos(dblAnswer)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Distance Calculator", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
         'display answer on screen
-        lblDistance.Text = intAnswer & " Miles"
+        lblDistance.Text = dblAnswer & " Miles"
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

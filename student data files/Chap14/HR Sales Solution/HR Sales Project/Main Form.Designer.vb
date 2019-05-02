@@ -161,7 +161,7 @@ Partial Class frmMain
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(561, 29)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 20)
+        Me.Label1.Size = New System.Drawing.Size(40, 20)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "&Year:"
         '

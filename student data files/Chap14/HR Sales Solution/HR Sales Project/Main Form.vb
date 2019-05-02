@@ -1,7 +1,7 @@
 ﻿' Name:         HR Sales Project
 ' Purpose:      Displays the records stored in a dataset
 '               Allows the user to add records to a dataset
-' Programmer:   <your name> on <current date>
+' Programmer:   Branden Barber on May 1, 2019
 
 Option Explicit On
 Option Strict On
@@ -41,5 +41,32 @@ Public Class frmMain
         If (e.KeyChar < "0" OrElse e.KeyChar > "9") AndAlso e.KeyChar <> ControlChars.Back Then
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub BtnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        If txtRecord.Text <> String.Empty AndAlso txtYear.Text <> String.Empty AndAlso
+                        txtMonth.Text <> String.Empty AndAlso txtSales.Text <> String.Empty Then
+
+            Dim intRecord As Integer, intYear As Integer, intMonth As Integer, intSales As Integer
+            Integer.TryParse(txtRecord.Text, intRecord)
+            Integer.TryParse(txtYear.Text, intYear)
+            Integer.TryParse(txtMonth.Text, intMonth)
+            Integer.TryParse(txtSales.Text, intSales)
+
+            Try
+                SalesDataSet.tblSales.AddtblSalesRow(intRecord, intYear, intMonth, intSales)
+            Catch ex As Exception
+                MessageBox.Show(ex.Message, "HR Sales", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End Try
+        Else
+            MessageBox.Show("Not all fields filled in!", "HR Sales", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
+    Private Sub frmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Try
+            TblSalesTableAdapter.Update(SalesDataSet.tblSales)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "HR Sales", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
     End Sub
 End Class
