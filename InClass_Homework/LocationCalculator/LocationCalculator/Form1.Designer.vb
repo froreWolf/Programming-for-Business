@@ -125,7 +125,6 @@ Partial Class Form1
         Me.lblDistance.Name = "lblDistance"
         Me.lblDistance.Size = New System.Drawing.Size(221, 23)
         Me.lblDistance.TabIndex = 10
-        Me.lblDistance.Text = "Longitude 2"
         '
         'Label5
         '

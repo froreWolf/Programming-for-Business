@@ -3,17 +3,18 @@
         'create and initialize variables
         Dim dblLon1 As Double, dblLon2 As Double, dblLat1 As Double, dblLat2 As Double
         Dim intEarthRadMiles As Integer = 3959, dblAnswer As Double
-        Integer.TryParse(txtLon1.Text, dblLon1)
-        Integer.TryParse(txtLon2.Text, dblLon2)
-        Integer.TryParse(txtLat1.Text, dblLat1)
-        Integer.TryParse(txtLat2.Text, dblLat2)
+        Double.TryParse(txtLon1.Text, dblLon1)
+        Double.TryParse(txtLon2.Text, dblLon2)
+        Double.TryParse(txtLat1.Text, dblLat1)
+        Double.TryParse(txtLat2.Text, dblLat2)
+        'convert all numbers to radians
         dblLon1 = dblLon1 * Math.PI / 180
         dblLon2 = dblLon2 * Math.PI / 180
         dblLat1 = dblLat1 * Math.PI / 180
         dblLat2 = dblLat2 * Math.PI / 180
         'calculate distance between the points
         Try
-            dblAnswer = ((Math.Cos(dblLon2 - dblLon1)) * (Math.Cos(dblLat1) * Math.Cos(dblLat2))) + (Math.Sin(dblLat1) + Math.Sin(dblLat2))
+            dblAnswer = (Math.Cos(dblLon2 - dblLon1) * (Math.Cos(dblLat1) * Math.Cos(dblLat2))) + (Math.Sin(dblLat1) + Math.Sin(dblLat2))
             dblAnswer = intEarthRadMiles * Math.Acos(dblAnswer)
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Distance Calculator", MessageBoxButtons.OK, MessageBoxIcon.Information)
